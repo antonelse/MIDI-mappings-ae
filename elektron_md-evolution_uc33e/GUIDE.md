@@ -17,7 +17,7 @@ For each of the 16 machines we have 24 different DATA ENTRY knobs:
 For this configuration, we suggest using a **Control Base Channel** = 1-4, which can be selected in the GLOBAL configuration of the MD.
 
 The CTRL-CHANGE mappings follow these rules [1]:
-![mapping_1](./imgs/mapping_1.png)
+![mapping_1](./imgs/uc33e-data_entry.jpg)
 
 ## MIDI Channel Mapping 📡
 
@@ -57,7 +57,7 @@ Since the UC33e can store multiple presets (up to 33), we can assign **1 UC33e p
 We end up with **16 different presets**, from P01 to P16.
 
 **➕ Additionally**, we create preset P17 where we map all LEVEL knobs and MUTE buttons for all 16 machines.
-![uc33e-custom](./imgs/uc33e-custom.jpg)
+![uc33e-custom](./imgs/uc33e-volumes.jpg)
 
 ### Fader Assignment:
 - MD machines 1-8 VOLUME → Presets P01 to P08
