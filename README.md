@@ -1,3 +1,7 @@
+⚠️ **Disclaimer: Work in Progress STATUS** ⚠️
+
+_This repository and its contents are currently a Work in Progress. Mappings, documentation, and file structures may be incomplete, subject to change, or contain inaccuracies. Use at your own risk and always verify critical settings with the official hardware manuals._
+
 # MIDI-mappings-ae
 A series of MIDI mappings I created for my studio # MIDI Mapping Repository 🎛️
 
