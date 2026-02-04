@@ -1,4 +1,3 @@
-# Elektron Machinedrum - Evolution UC33e 
 # MIDI Setup 🎛️
 
 ## Overview 🎯
@@ -46,7 +45,7 @@ The CTRL-CHANGE mappings follow these rules [1]:
 
 **💡 Note**: Only the MIDI CHANNEL changes - the CC values remain consistent across channels!
 
-## Controller Layout 🎹
+## UC33e Control Allocation 🎹
 Due to this parameter configuration, we can divide the UC33e as follows:
 ![uc33e](./imgs/uc33e.jpg)
 
@@ -79,21 +78,6 @@ I suggest performing the Assignment operation for **all** DATA ENTRY controls re
 
 **⚠️ Important**: Wait until the screen stops blinking before proceeding!
 
-## Useful Tips & Tricks 💡
-**Speed Up MIDI CHANNEL Assignment**:
-- Press CHANNEL button and quickly move each knob/fader one after another
-- Use + and - buttons to adjust the value shown on screen
-- UC33e remains in MIDI CHANNEL assignment mode during this process
-
-**Speed Up DATA ENTRY Assignment**:
-- Press ASSIGN and quickly move each knob one after another  
-- Enter the correct CC numbers on the keypad as you go
-
-**Double-Check Assignments**:
-- Quickly move knobs while watching the screen to verify CC and MIDI CHANNEL values
-
-*"You have to be fast, bastard capitalist!!"* ⚡
-
 ## Workflow 🔄
 As mentioned, we assign preset numbers (e.g., P03) to correspond with MD machines (e.g., machine 3, or *Track 3* in the manual[1]). Each UC33e preset stores mapping information for a single MD machine.
 
@@ -102,34 +86,12 @@ As mentioned, we assign preset numbers (e.g., P03) to correspond with MD machine
 
 **⚠️ Important**: Wait until the controller's screen finishes blinking before using the controls!
 
-## Memory Dump/Restore 💾
-We use [SysEx Librarian](https://www.snoize.com/SysExLibrarian/) software with a MIDI2USB cable for I/O communication.
-
-![SysEx Librarian](./imgs/sysex_librarian.png)
-
-### Dump Process:
-- Connect MIDI2USB to UC33e OUTPUT MIDI port
-- In SysEx Librarian, select correct input source
-- Press *Record Many* in SysEx Librarian
-- On UC33e, press MEM.DUMP (DATA MSB + STORE)
-- UC33e screen shows *SYS* - transmission in progress
-
-### Restore Process:
-- Connect MIDI2USB to UC33e INPUT MIDI port  
-- In SysEx Librarian, select correct output source
-- Select SysEx file and press *Play*
-- UC33e screen shows *SYS* - receiving in progress
-
-## Useful Shortcuts 🎯
-- **Reset UC33e**: Turn on while holding + and - buttons
-- **Lock UC33e**: Press CTR MUTE (PROGRAM + DATA LSB)  
-- **Send Snapshots**: Press SNAPSHOT ("+" + "-")
-
 ## Resources 📚
-[[1](https://www.strumentimusicali.net/manuali/ELEKTRON_SP1_ENG.pdf)] ELEKTRON Machinedrum Manual  
-[[2](https://www.strumentimusicali.net/manuali/M_AUDIO_UC-33e_EN.pdf)] M-Audio Evolution UC33e Manual
+- [1] [ELEKTRON Machinedrum Manual](https://www.strumentimusicali.net/manuali/ELEKTRON_SP1_ENG.pdf) - *Instant Classic!*
+- [2] [M-Audio Evolution UC33e Manual](https://www.strumentimusicali.net/manuali/M_AUDIO_UC-33e_EN.pdf)
 
 ## TODO List 📝
+- Check if P17 was mapped !
 - Understand how to change predefined presets (1-4 upper right buttons)
 - Understand MSB and LSB parameters (max MD resolution 32 bit)  
 - Understand the PROGRAM parameter

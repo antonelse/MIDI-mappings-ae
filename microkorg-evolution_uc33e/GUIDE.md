@@ -1,4 +1,4 @@
-# Evolution UC33e - microKORG MIDI Setup 🎛️
+#MIDI Setup 🎛️
 
 ## Overview 🎯
 Our goal is to control parameters of the microKORG synthesizer using the Evolution UC33e MIDI controller. The microKORG offers comprehensive sound design capabilities that we can map to the UC33e's physical controls for more intuitive and hands-on manipulation.
@@ -81,38 +81,6 @@ To change the MIDI channel on the microKORG:
 1. Turn the **EDIT SELECT 2** knob to the MIDI menu
 2. Turn the **EDIT CONTROL 1** knob (CUTOFF) to select the desired MIDI Channel (MIDI CH)
 
-## Mapping Process 🔄
-
-For each parameter, perform these 2 main operations on the UC33e: **Assignment** and **Storage**.
-
-### 1. Assignment:
-- Move the desired knob/fader/button
-- Press **ASSIGN**: Set the desired CC value for microKORG using the keypad
-- Press **CHANNEL**: Set to **MIDI Channel 5** (or your preferred channel)
-
-### 2. Storage:
-- Press **STORE**: Set the desired preset number to save this mapping
-- I use **P20** for the main microKORG mapping (others are for Elektron Machinedrum)
-
-**⚠️ Important**: Wait until the screen stops blinking before proceeding!
-
-## Useful Tips & Tricks 💡
-
-**Speed Up MIDI CHANNEL Assignment:**
-
-- Press CHANNEL button and quickly move each knob/fader one after another
-- Use + and - buttons to adjust the value shown on screen
-- UC33e remains in MIDI CHANNEL assignment mode during this process
-
-**Speed Up CC Assignment:**
-
-- Press ASSIGN and quickly move each knob one after another
-- Enter the correct CC numbers on the keypad as you go
-
-**Double-Check Assignments:**
-
-- Quickly move knobs while watching the screen to verify CC and MIDI CHANNEL values
-
 ## Workflow 🔄
 
 Each UC33e preset stores a complete mapping for microKORG control. The layout follows the natural signal flow of the synthesizer:
@@ -125,28 +93,6 @@ Each UC33e preset stores a complete mapping for microKORG control. The layout fo
 ![mk-diagram](./imgs/mk-diagram.png)
 *microKORG synthesizer block diagram*
 
-## Memory Dump/Restore 💾
-
-Use [SysEx Librarian](https://www.snoize.com/SysExLibrarian/) software with a MIDI2USB cable for I/O communication. You can also send MIDI via USB by using the **MIDI OUT FROM USB** function (press SELECT + ASSIGN together).
-
-### Dump Process:
-- Connect MIDI2USB to UC33e OUTPUT MIDI port
-- In SysEx Librarian, select correct input source
-- Press *Record Many* in SysEx Librarian
-- On UC33e, press MEM.DUMP (DATA MSB + STORE)
-- UC33e screen shows *SYS* - transmission in progress
-
-### Restore Process:
-- Connect MIDI2USB to UC33e INPUT MIDI port
-- In SysEx Librarian, select correct output source
-- Select SysEx file and press *Play*
-- UC33e screen shows *SYS* - receiving in progress
-
-## Useful Shortcuts 🎯
-- **Reset UC33e**: Turn on while holding + and - buttons
-- **Lock UC33e**: Press CTR MUTE (PROGRAM + DATA LSB)
-- **Send Snapshots**: Press SNAPSHOT ("+" + "-")
-- **MIDI Out via USB**: Press SELECT + ASSIGN together
 
 ## Resources 📚
 - [1] [microKORG Manual](https://cdn.korg.com/us/support/download/files/8f226053113b3be59753dcce14e74cca.pdf) - *I love this manual!*
