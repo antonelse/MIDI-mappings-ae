@@ -18,7 +18,7 @@ Here some specs about the preset number, CC range and versions.
 | **P22** | 1 - 33  | v1/v2 | Source/Modulation | 
 | **P23**| 34 - 66 | v1 | Effects/Routing | 
 | **P24** | 67 - 99 | v2 | Source/Modulation |
-| **P25** | 34 - 66 | v1 | Effects/Routing |
+| **P25** | 34 - 66 | v2 | Effects/Routing |
 
 
 ## AxoDrone V1
