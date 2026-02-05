@@ -14,7 +14,7 @@ At the time of writing, I developed 2 different versions of the AxoDrone synthes
 Here some specs about the preset number, CC range and versions.
 
 | UC33e Presets | CC Range | AxoDrone Ver. | Purpose |
-|--------|--------|--------------|---------------|----------|---------------|
+|-|-|-|-|
 | **P22** | 1 - 33  | v1/v2 | Source/Modulation | 
 | **P23**| 34 - 66 | v1 | Effects/Routing | 
 | **P24** | 67 - 99 | v2 | Source/Modulation |
