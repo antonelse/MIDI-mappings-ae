@@ -1,0 +1,1083 @@
+<patch-1.0 appVersion="1.0.12">
+   <comment type="patch/comment" x="28" y="28" text="TIMBRE"/>
+   <comment type="patch/comment" x="28" y="42" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="42" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="42" text="OFFSET"/>
+   <comment type="patch/comment" x="518" y="42" text="OSC 1"/>
+   <comment type="patch/comment" x="742" y="42" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="42" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="42" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1078" y="42" text="OFFSET"/>
+   <comment type="patch/comment" x="1358" y="42" text="OSCs MIX V1"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_4" x="28" y="56">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="26" value="-38.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount" x="126" y="56">
+      <params>
+         <frac32.u.map name="value" MidiCC="27" value="12.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_8" x="196" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_15" x="252" y="56">
+      <params>
+         <frac32.s.map name="value" MidiCC="28" value="-33.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_3" x="322" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/brds/wavetables" uuid="09124b5a-12d5-47a0-8de6-6a3755e14e74" name="wavetables_1" x="518" y="56">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="10" value="-21.0"/>
+         <frac32.u.map name="timbre" value="64.0"/>
+         <frac32.u.map name="color" value="30.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_2" x="742" y="56">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="11" value="-42.0"/>
+         <frac32.u.map name="reso" MidiCC="12" value="22.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_6" x="854" y="56">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="1" value="-49.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_4" x="952" y="56">
+      <params>
+         <frac32.u.map name="value" MidiCC="2" value="18.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_10" x="1022" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_17" x="1078" y="56">
+      <params>
+         <frac32.s.map name="value" MidiCC="3" value="-28.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_5" x="1148" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 3 g" uuid="efc0bdb8ca0ec2184330951eff5203ff487e35a9" name="mix_1" x="1358" y="56">
+      <params>
+         <frac32.u.map name="gain1" MidiCC="33" value="41.0"/>
+         <frac32.u.map name="gain2" MidiCC="25" value="39.0"/>
+         <frac32.u.map name="gain3" MidiCC="17" value="42.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_7" x="1456" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_5" x="854" y="140">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="154" text="COLOR"/>
+   <comment type="patch/comment" x="28" y="168" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="168" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="168" text="OFFSET"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_5" x="28" y="182">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="18" value="-53.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_1" x="126" y="182">
+      <params>
+         <frac32.u.map name="value" MidiCC="19" value="12.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_9" x="196" y="182">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_16" x="252" y="182">
+      <params>
+         <frac32.s.map name="value" MidiCC="20" value="-45.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_4" x="322" y="182">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="322" text="TIMBRE"/>
+   <comment type="patch/comment" x="28" y="336" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="336" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="336" text="OFFSET"/>
+   <comment type="patch/comment" x="518" y="336" text="OSC 2"/>
+   <comment type="patch/comment" x="742" y="336" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="336" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="336" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1078" y="336" text="OFFSET"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_7" x="28" y="350">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="29" value="-62.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_2" x="126" y="350">
+      <params>
+         <frac32.u.map name="value" MidiCC="30" value="5.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_11" x="196" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_26" x="252" y="350">
+      <params>
+         <frac32.s.map name="value" MidiCC="31" value="-32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_6" x="322" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/brds/harmonics" uuid="4107c2f9-7624-421b-800c-9896569adf77" name="harmonics_1" x="518" y="350">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="13" value="-10.0"/>
+         <frac32.u.map name="timbre" value="64.0"/>
+         <frac32.u.map name="color" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_1" x="742" y="350">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="14" value="-24.0"/>
+         <frac32.u.map name="reso" MidiCC="15" value="20.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_9" x="854" y="350">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="4" value="-55.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_5" x="952" y="350">
+      <params>
+         <frac32.u.map name="value" MidiCC="5" value="19.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_13" x="1022" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_19" x="1078" y="350">
+      <params>
+         <frac32.s.map name="value" MidiCC="6" value="-45.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_9" x="1148" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_4" x="854" y="434">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="448" text="COLOR"/>
+   <comment type="patch/comment" x="1820" y="448" text="DELAY"/>
+   <comment type="patch/comment" x="1946" y="448" text="REVERB"/>
+   <comment type="patch/comment" x="28" y="462" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="462" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="462" text="OFFSET"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_10" x="1750" y="462">
+      <params>
+         <frac32.u.map name="value" MidiCC="34" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mtyas/delay/long-delay" uuid="766ebee1-5b46-47aa-9cca-df1fdf814b93" name="obj_1" x="1820" y="462">
+      <params>
+         <frac32.s.map name="lowpass_1" value="19.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="TSG/fx/reverb" uuid="c3522d9c-738f-412a-b538-be8482a7744b" name="obj_3" x="1932" y="462">
+      <params>
+         <frac32.u.map name="PreDelay" MidiCC="59" value="0.0"/>
+         <frac32.u.map name="decay" MidiCC="60" value="30.5"/>
+         <frac32.u.map name="LowDamp" MidiCC="51" value="0.0"/>
+         <frac32.u.map name="HighDamp" MidiCC="52" value="0.0"/>
+         <frac32.u.map name="size" MidiCC="61" value="33.0"/>
+         <frac32.s.map name="mod_:pitch" MidiCC="43" value="-64.0"/>
+         <frac32.u.map name="mod_:gain" MidiCC="44" value="0.0"/>
+         <frac32.u.map name="diffusion" MidiCC="53" value="30.5"/>
+         <frac32.u.map name="mix" MidiCC="45" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_3" x="2044" y="462">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_8" x="28" y="476">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="21" value="-57.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_3" x="126" y="476">
+      <params>
+         <frac32.u.map name="value" MidiCC="22" value="14.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_12" x="196" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_31" x="252" y="476">
+      <params>
+         <frac32.s.map name="value" MidiCC="23" value="-16.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_8" x="322" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_11" x="1750" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="35" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_2" x="1876" y="602">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="518" y="616" text="OSC 3"/>
+   <comment type="patch/comment" x="742" y="616" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="616" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="616" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1078" y="616" text="OFFSET"/>
+   <obj type="osc/tri" uuid="905879afa8256b0ca207557d656949e476ca6f16" name="tri_1" x="518" y="630">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="32" value="-33.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_3" x="742" y="630">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="24" value="-15.0"/>
+         <frac32.u.map name="reso" MidiCC="16" value="9.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_10" x="854" y="630">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="7" value="-49.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_6" x="952" y="630">
+      <params>
+         <frac32.u.map name="value" MidiCC="8" value="16.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_14" x="1022" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_23" x="1078" y="630">
+      <params>
+         <frac32.s.map name="value" MidiCC="9" value="-47.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_10" x="1148" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_12" x="1750" y="630">
+      <params>
+         <frac32.u.map name="value" MidiCC="36" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_6" x="854" y="714">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="826" text="V2 ADDITIONS ======================="/>
+   <comment type="patch/comment" x="28" y="868" text="TIMBRE"/>
+   <comment type="patch/comment" x="28" y="882" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="882" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="882" text="OFFSET"/>
+   <comment type="patch/comment" x="518" y="882" text="OSC 4"/>
+   <comment type="patch/comment" x="742" y="882" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="882" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="882" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1078" y="882" text="OFFSET"/>
+   <comment type="patch/comment" x="1358" y="882" text="OSCs MIX V2"/>
+   <comment type="patch/comment" x="1750" y="882" text="FINAL MIX"/>
+   <comment type="patch/comment" x="1862" y="882" text="VOLUME"/>
+   <comment type="patch/comment" x="2002" y="882" text="COMP"/>
+   <comment type="patch/comment" x="2142" y="882" text="OUT"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_11" x="28" y="896">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="92" value="-26.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_" x="126" y="896">
+      <params>
+         <frac32.u.map name="value" MidiCC="93" value="17.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_15" x="196" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_18" x="252" y="896">
+      <params>
+         <frac32.s.map name="value" MidiCC="94" value="-37.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_11" x="322" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="sss/MI/braidsA" uuid="74d92d55-6c28-4d40-a803-305e9d751a39" name="braidsA_1" x="518" y="896">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="76" value="-25.0"/>
+         <frac32.u.map name="timbre" value="64.0"/>
+         <frac32.u.map name="color" value="30.0"/>
+      </params>
+      <attribs>
+         <combo attributeName="mode" selection="wavetab"/>
+      </attribs>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_4" x="742" y="896">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="77" value="-28.0"/>
+         <frac32.u.map name="reso" MidiCC="78" value="19.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_12" x="854" y="896">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="67" value="-47.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_9" x="952" y="896">
+      <params>
+         <frac32.u.map name="value" MidiCC="68" value="16.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_16" x="1022" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_20" x="1078" y="896">
+      <params>
+         <frac32.s.map name="value" MidiCC="69" value="-53.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_12" x="1148" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 3 g" uuid="efc0bdb8ca0ec2184330951eff5203ff487e35a9" name="mix_5" x="1358" y="896">
+      <params>
+         <frac32.u.map name="gain1" MidiCC="66" value="43.0"/>
+         <frac32.u.map name="gain2" MidiCC="58" value="20.0"/>
+         <frac32.u.map name="gain3" MidiCC="50" value="3.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_12" x="1456" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 3 g" uuid="efc0bdb8ca0ec2184330951eff5203ff487e35a9" name="mix_3" x="1750" y="896">
+      <params>
+         <frac32.u.map name="gain1" value="32.0"/>
+         <frac32.u.map name="gain2" value="32.0"/>
+         <frac32.u.map name="gain3" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_29" x="1862" y="896">
+      <params>
+         <frac32.u.map name="value" MidiCC="42" value="63.99999952316284"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_4" x="1932" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="sss/dist/softCompSt" uuid="5a1c1491-cce7-4922-96f2-63477d474ef3" name="softCompSt_1" x="2002" y="896">
+      <params>
+         <frac32.u.map name="pre" value="0.0"/>
+         <frac32.u.map name="tresh" value="64.0"/>
+         <frac32.u.map name="soft" value="0.0"/>
+         <frac32.u.map name="ratio" value="64.0"/>
+         <frac32.u.map name="out" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="2142" y="896">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_5" x="1932" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_9" x="854" y="980">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="994" text="COLOR"/>
+   <comment type="patch/comment" x="28" y="1008" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="1008" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="1008" text="OFFSET"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_13" x="28" y="1022">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="84" value="-34.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_7" x="126" y="1022">
+      <params>
+         <frac32.u.map name="value" MidiCC="85" value="16.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_17" x="196" y="1022">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_21" x="252" y="1022">
+      <params>
+         <frac32.s.map name="value" MidiCC="86" value="-52.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_13" x="322" y="1022">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_8" x="1932" y="1022">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 3 g" uuid="efc0bdb8ca0ec2184330951eff5203ff487e35a9" name="mix_4" x="1750" y="1092">
+      <params>
+         <frac32.u.map name="gain1" value="32.0"/>
+         <frac32.u.map name="gain2" value="32.0"/>
+         <frac32.u.map name="gain3" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="518" y="1134" text="OSC 5"/>
+   <obj type="lokki/osc/extenduloti" uuid="1a6da436-5ddd-4dc7-9d2e-4aa75cb2e382" name="extenduloti_1" x="518" y="1148">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="79" value="-7.0"/>
+         <frac32.u.map name="grainfreq" value="30.0"/>
+         <frac32.u.map name="graindecay" value="30.0"/>
+         <frac32.u.map name="grainfreq2" value="30.0"/>
+         <frac32.u.map name="graindecay2" value="30.0"/>
+         <int32.hradio name="waveform1" value="1"/>
+         <frac32.u.map name="pulsewidth1" value="30.0"/>
+         <int32.hradio name="waveform2" value="2"/>
+         <frac32.u.map name="pulsewidth2" value="30.0"/>
+         <bool32.tgl name="8bit" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="1176" text="TIMBRE"/>
+   <comment type="patch/comment" x="28" y="1190" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="1190" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="252" y="1190" text="OFFSET"/>
+   <comment type="patch/comment" x="742" y="1190" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="1190" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="1190" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1092" y="1190" text="OFFSET"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_14" x="28" y="1204">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="95" value="-16.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_8" x="126" y="1204">
+      <params>
+         <frac32.u.map name="value" MidiCC="96" value="23.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_18" x="196" y="1204">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_27" x="252" y="1204">
+      <params>
+         <frac32.s.map name="value" MidiCC="97" value="-14.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_7" x="322" y="1204">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_5" x="742" y="1204">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="80" value="1.0"/>
+         <frac32.u.map name="reso" MidiCC="81" value="30.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_15" x="854" y="1204">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="70" value="-48.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_10" x="952" y="1204">
+      <params>
+         <frac32.u.map name="value" MidiCC="71" value="13.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_19" x="1036" y="1204">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_22" x="1092" y="1204">
+      <params>
+         <frac32.s.map name="value" MidiCC="72" value="-41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_14" x="1162" y="1204">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_10" x="854" y="1288">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="28" y="1302" text="COLOR"/>
+   <comment type="patch/comment" x="28" y="1316" text="LFO RATE"/>
+   <comment type="patch/comment" x="126" y="1316" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="266" y="1316" text="OFFSET"/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_16" x="28" y="1330">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="87" value="-41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_11" x="126" y="1330">
+      <params>
+         <frac32.u.map name="value" MidiCC="88" value="18.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_20" x="210" y="1330">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_32" x="266" y="1330">
+      <params>
+         <frac32.s.map name="value" MidiCC="89" value="-42.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_15" x="336" y="1330">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="518" y="1596" text="OSC 6"/>
+   <comment type="patch/comment" x="742" y="1596" text="FILTER"/>
+   <comment type="patch/comment" x="854" y="1596" text="LFO RATE"/>
+   <comment type="patch/comment" x="952" y="1596" text="ATTENUATOR"/>
+   <comment type="patch/comment" x="1092" y="1596" text="OFFSET"/>
+   <obj type="tiar/noise/radio" uuid="09720a73-5eef-41d5-ba77-5bcba24f6140" name="radio_1" x="518" y="1610">
+      <params>
+         <frac32.u.map name="noisiness" MidiCC="37" value="56.0"/>
+         <frac32.u.map name="spectrum" MidiCC="38" value="36.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/multimode svf m" uuid="71d5f8b2131b691d591a9a9ee28771309f8938d" name="multimode_6" x="742" y="1610">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="90" value="23.0"/>
+         <frac32.u.map name="reso" MidiCC="82" value="13.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_17" x="854" y="1610">
+      <params>
+         <frac32.s.map name="pitch" MidiCC="73" value="-64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="lfo_amount_12" x="952" y="1610">
+      <params>
+         <frac32.u.map name="value" MidiCC="74" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_21" x="1036" y="1610">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_24" x="1092" y="1610">
+      <params>
+         <frac32.s.map name="value" MidiCC="75" value="-64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_16" x="1162" y="1610">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_11" x="854" y="1694">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="462" y="1736" text="These 2 are on the Effect Page (P25). Sorry :("/>
+   <nets>
+      <net>
+         <source obj="sine_4" outlet="wave"/>
+         <dest obj="*_8" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount" outlet="out"/>
+         <dest obj="*_8" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_8" outlet="result"/>
+         <dest obj="+_3" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_3" outlet="out"/>
+         <dest obj="wavetables_1" inlet="timbre"/>
+      </net>
+      <net>
+         <source obj="dial_15" outlet="out"/>
+         <dest obj="+_3" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_5" outlet="wave"/>
+         <dest obj="*_9" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_1" outlet="out"/>
+         <dest obj="*_9" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_9" outlet="result"/>
+         <dest obj="+_4" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_4" outlet="out"/>
+         <dest obj="wavetables_1" inlet="color"/>
+      </net>
+      <net>
+         <source obj="dial_16" outlet="out"/>
+         <dest obj="+_4" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_4" outlet="out"/>
+         <dest obj="*_10" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_10" outlet="result"/>
+         <dest obj="+_5" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_17" outlet="out"/>
+         <dest obj="+_5" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="dial_10" outlet="out"/>
+         <dest obj="obj_1" inlet="speed"/>
+      </net>
+      <net>
+         <source obj="dial_11" outlet="out"/>
+         <dest obj="obj_1" inlet="feedback"/>
+      </net>
+      <net>
+         <source obj="dial_12" outlet="out"/>
+         <dest obj="obj_1" inlet="amount"/>
+      </net>
+      <net>
+         <source obj="dial_29" outlet="out"/>
+         <dest obj="vca_4" inlet="v"/>
+         <dest obj="vca_5" inlet="v"/>
+      </net>
+      <net>
+         <source obj="mix_3" outlet="out"/>
+         <dest obj="vca_4" inlet="a"/>
+      </net>
+      <net>
+         <source obj="mix_4" outlet="out"/>
+         <dest obj="vca_5" inlet="a"/>
+      </net>
+      <net>
+         <source obj="sine_7" outlet="wave"/>
+         <dest obj="*_11" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_2" outlet="out"/>
+         <dest obj="*_11" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_11" outlet="result"/>
+         <dest obj="+_6" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_26" outlet="out"/>
+         <dest obj="+_6" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_8" outlet="wave"/>
+         <dest obj="*_12" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_3" outlet="out"/>
+         <dest obj="*_12" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_12" outlet="result"/>
+         <dest obj="+_8" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_31" outlet="out"/>
+         <dest obj="+_8" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="tri_1" outlet="wave"/>
+         <dest obj="multimode_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_6" outlet="wave"/>
+         <dest obj="*_10" inlet="a"/>
+      </net>
+      <net>
+         <source obj="wavetables_1" outlet="wave"/>
+         <dest obj="multimode_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="vu_7" inlet="in"/>
+         <dest obj="obj_1" inlet="inlet_1"/>
+      </net>
+      <net>
+         <source obj="multimode_2" outlet="bp"/>
+         <dest obj="vu_5" inlet="in"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="multimode_1" outlet="bp"/>
+         <dest obj="vu_4" inlet="in"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="multimode_3" outlet="bp"/>
+         <dest obj="vu_6" inlet="in"/>
+         <dest obj="mix_1" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="*_13" outlet="result"/>
+         <dest obj="+_9" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_19" outlet="out"/>
+         <dest obj="+_9" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_9" outlet="wave"/>
+         <dest obj="*_13" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_6" outlet="out"/>
+         <dest obj="*_14" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_14" outlet="result"/>
+         <dest obj="+_10" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_23" outlet="out"/>
+         <dest obj="+_10" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_10" outlet="wave"/>
+         <dest obj="*_14" inlet="a"/>
+      </net>
+      <net>
+         <source obj="+_5" outlet="out"/>
+         <dest obj="multimode_2" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_9" outlet="out"/>
+         <dest obj="multimode_1" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_10" outlet="out"/>
+         <dest obj="multimode_3" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="outlet_1"/>
+         <dest obj="obj_3" inlet="InL"/>
+         <dest obj="obj_3" inlet="InR"/>
+         <dest obj="vu_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="obj_3" outlet="l"/>
+         <dest obj="mix_3" inlet="in1"/>
+         <dest obj="vu_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="obj_3" outlet="r"/>
+         <dest obj="mix_4" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="softCompSt_1" outlet="outL"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="softCompSt_1" outlet="outR"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="vca_5" outlet="o"/>
+         <dest obj="softCompSt_1" inlet="inR"/>
+      </net>
+      <net>
+         <source obj="vca_4" outlet="o"/>
+         <dest obj="softCompSt_1" inlet="inL"/>
+         <dest obj="vu_8" inlet="in"/>
+      </net>
+      <net>
+         <source obj="+_8" outlet="out"/>
+         <dest obj="harmonics_1" inlet="color"/>
+      </net>
+      <net>
+         <source obj="harmonics_1" outlet="wave"/>
+         <dest obj="multimode_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="+_6" outlet="out"/>
+         <dest obj="harmonics_1" inlet="timbre"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_9" outlet="out"/>
+         <dest obj="*_16" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_16" outlet="result"/>
+         <dest obj="+_12" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_20" outlet="out"/>
+         <dest obj="+_12" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_12" outlet="wave"/>
+         <dest obj="*_16" inlet="a"/>
+      </net>
+      <net>
+         <source obj="multimode_4" outlet="bp"/>
+         <dest obj="vu_9" inlet="in"/>
+         <dest obj="mix_5" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_12" outlet="out"/>
+         <dest obj="multimode_4" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_" outlet="out"/>
+         <dest obj="*_15" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_15" outlet="result"/>
+         <dest obj="+_11" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_18" outlet="out"/>
+         <dest obj="+_11" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_13" outlet="wave"/>
+         <dest obj="*_17" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_7" outlet="out"/>
+         <dest obj="*_17" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_17" outlet="result"/>
+         <dest obj="+_13" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_21" outlet="out"/>
+         <dest obj="+_13" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="+_11" outlet="out"/>
+         <dest obj="braidsA_1" inlet="timbre"/>
+         <dest obj="extenduloti_1" inlet="grainfreq"/>
+      </net>
+      <net>
+         <source obj="+_13" outlet="out"/>
+         <dest obj="braidsA_1" inlet="color"/>
+         <dest obj="extenduloti_1" inlet="graindecay"/>
+      </net>
+      <net>
+         <source obj="braidsA_1" outlet="wave"/>
+         <dest obj="multimode_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_14" outlet="wave"/>
+         <dest obj="*_18" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_8" outlet="out"/>
+         <dest obj="*_18" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_18" outlet="result"/>
+         <dest obj="+_7" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_27" outlet="out"/>
+         <dest obj="+_7" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_16" outlet="wave"/>
+         <dest obj="*_20" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_11" outlet="out"/>
+         <dest obj="*_20" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_20" outlet="result"/>
+         <dest obj="+_15" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_32" outlet="out"/>
+         <dest obj="+_15" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="multimode_5" outlet="bp"/>
+         <dest obj="vu_10" inlet="in"/>
+         <dest obj="mix_5" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="*_19" outlet="result"/>
+         <dest obj="+_14" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_22" outlet="out"/>
+         <dest obj="+_14" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_15" outlet="wave"/>
+         <dest obj="*_19" inlet="a"/>
+      </net>
+      <net>
+         <source obj="+_14" outlet="out"/>
+         <dest obj="multimode_5" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="mix_5" outlet="out"/>
+         <dest obj="vu_12" inlet="in"/>
+         <dest obj="mix_1" inlet="bus_in"/>
+      </net>
+      <net>
+         <source obj="extenduloti_1" outlet="phasor"/>
+         <dest obj="multimode_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="multimode_6" outlet="bp"/>
+         <dest obj="vu_11" inlet="in"/>
+         <dest obj="mix_5" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="lfo_amount_12" outlet="out"/>
+         <dest obj="*_21" inlet="b"/>
+      </net>
+      <net>
+         <source obj="*_21" outlet="result"/>
+         <dest obj="+_16" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="dial_24" outlet="out"/>
+         <dest obj="+_16" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="sine_17" outlet="wave"/>
+         <dest obj="*_21" inlet="a"/>
+      </net>
+      <net>
+         <source obj="+_16" outlet="out"/>
+         <dest obj="multimode_6" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_15" outlet="out"/>
+         <dest obj="extenduloti_1" inlet="graindecay2"/>
+      </net>
+      <net>
+         <source obj="+_7" outlet="out"/>
+         <dest obj="extenduloti_1" inlet="grainfreq2"/>
+      </net>
+      <net>
+         <source obj="sine_11" outlet="wave"/>
+         <dest obj="*_15" inlet="a"/>
+      </net>
+      <net>
+         <source obj="radio_1" outlet="out"/>
+         <dest obj="multimode_6" inlet="in"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>-407</x>
+      <y>-1415</y>
+      <width>2560</width>
+      <height>1415</height>
+   </windowPos>
+</patch-1.0>
