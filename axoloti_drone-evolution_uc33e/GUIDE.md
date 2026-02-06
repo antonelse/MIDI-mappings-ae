@@ -11,10 +11,10 @@ The original patch is available on his personal GitHub [here](https://github.com
 
 ## Version Specs 📚
 At the time of writing, I developed 2 different versions of the AxoDrone synthesizer, v1 and v2.
-Here some specs about the preset number, CC range and versions.
+Here some specs about the preset number, CC range of the UC33e controller in addition to the related versions matching.
 
 | UC33e Presets | CC Range | AxoDrone Ver. | Purpose |
-|-|-|-|-|
+|------|-----|-----|-----|
 | **P22** | 1 - 33  | v1/v2 | Source/Modulation | 
 | **P23**| 34 - 66 | v1 | Effects/Routing | 
 | **P24** | 67 - 99 | v2 | Source/Modulation |
@@ -59,21 +59,35 @@ The possible controls are nearly endless. For simplicity, I decided to divide th
 There are few changes with respect to the V1:
 
 * 3x more Oscillators + ad‑hoc modulation and mixing stages, for a total of 6 Oscillators
-* Osc 5 params are inter modulated with Osc 4 modulations
+* 3x3 matrix mixer for more complex modulations
 * NO Line input
 * NO MIDI input
 
+We replaced Oscillator 1, 2, 4, 5 with different synthesis models of the well known Mutable Instrument [Braids](https://pichenettes.github.io/mutable-instruments-documentation/modules/braids/) oscillator. You can easly change the synthesis models from the Axoloti patcher.
+
+#### Matrix mixer details:
+In the v2 we added additional signals for expand the modulation capabilities of the AxoDrone.
+We use a 3x3 matrix mixer with 3 different modulation as input that can be combine together to build a more complex modulation signals.
+These modulations acts on Osc 4, 5 and 6.
+The flow of the mixer could be better understood by looking the image below (P25 preset) and the patch above.
+In specific:
+
+- out1 signal is summed with the timbre mod of Osc 4
+- out2 signal is summed with the timbre mod of Osc 5
+- out4 signal modulate alone the pitch of Osc 6
+
 ### UC33e Mapping Configuration 🎹
 
-I decided to divide the mapping into two pages (presets P22 and P23 on the UC33e):
+I decided to divide the mapping into 3 pages (presets P22, P24 and P25 on the UC33e):
 
 - **P22:** Source + Modulation + Filter + Mix sections for Osc 1, 2, 3
-- **P24:** Source + Modulation + Filter + Mix sections for Osc 3, 4, 5
-- **P25:** Effects + LineIn + MIDI
+- **P24:** Source + Modulation + Filter + Mix sections for Osc 4, 5, 6
+- **P25:** Effects + Matrix Mixer + Extra
 
-**NOTE**:
-We do not use **P23**, since was already used in V1.
-**P22** is the same as V1. Please refer to the V1 image for this page.
+**Important Notes**:
+
+- **P22** is the same as V1. Please refer to the V1 image for this page.
+- We do not use **P23**, since was already used in V1.
 
 
 ![uc33e_page_3](./imgs/uc33e_page_3_v2.jpeg)  
@@ -84,20 +98,27 @@ We do not use **P23**, since was already used in V1.
 
 ## Resources 📚
 - [1] [Axoloti article on CDM](https://cdm.link/axoloti-makes-any-music-hardware-you-can-imagine/)
-- [2] [Axoloti presentation](https://www.youtube.com/watch?v=g9yBebl8-vk) [Video]
+- [2] [Axoloti presentation](https://www.youtube.com/watch?v=g9yBebl8-vk)
 - [3] [Axoloti Factory Objects](https://www.privatepublic.de/public/factory-objectlist.html) [discontinued]
-- [4] [Ksoloti (new Axoloti)](https://ksoloti.github.io/index.html) [the successor of the discontinued Axoloti core board]
+- [4] [Ksoloti (new Axoloti)](https://ksoloti.github.io/index.html) [the deserving successor of the discontinued Axoloti core board]
 - [5] [Ksoloti discussion on MW](https://www.modwiggler.com/forum/viewtopic.php?t=277847&start=810)
-- [6] [Ksoloti Community](https://ksoloti.discourse.group/)
-- [7] [Ksoloti Github Repo](https://github.com/ksoloti)
-- [8] [Guilherme on Drone patch](https://www.youtube.com/watch?v=osG7fh6tiE8) [Video]
+- [6] [Ksoloti community](https://ksoloti.discourse.group/)
+- [7] [Ksoloti Github repo](https://github.com/ksoloti)
+- [8] [Guilherme on Drone patch](https://www.youtube.com/watch?v=osG7fh6tiE8) 
 - [9] [Drone original patch](https://github.com/guibot/DRONE-ENGINE/commits?author=guibot)
-- [10] [Peeps Music Box by s8jfou](https://www.s8jfou.com/synth.html) [Axoloti-based Buchla Music Easel micro version] [Video](https://www.youtube.com/watch?v=w7IrjJ7MmoY)
+- [10] [Peeps Music Box by s8jfou](https://www.s8jfou.com/synth.html) | [Video](https://www.youtube.com/watch?v=w7IrjJ7MmoY)
 - [10] [M-Audio Evolution UC33e Manual](https://www.strumentimusicali.net/manuali/M_AUDIO_UC-33e_EN.pdf)
 
 ## TODO List 📝
 - Understand MSB and LSB parameters for higher resolution control
-- Think about the addition of the play/pause/fwd buttons in the bottom right
-- Add backgroud noise
+- Think about the addition of the play/pause/fwd buttons in the bottom right (burst like modulation ?)
+- Add crackle noise
 - Optimize CPU usage
-- Add compressor control
+- Add more informative compressor control
+
+## AxoLove ❤️
+![axoloti_board](./imgs/axoloti_core_v1.2.jpg)  
+*My Axoloti Core board v1.2*
+
+![axolotl](./imgs/axolotl.webp)  
+*The real Axolotl <3*
