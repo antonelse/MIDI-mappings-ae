@@ -1,19 +1,19 @@
-# MIDI Setup 🎛️
+# MIDI Setup 🎛️ 
 
 ## Overview 🎯
-Our goal is to control parameters of the AxoDrone synthesizer, which runs on the Axoloti board, using the Evolution UC33e MIDI controller. Axoloti is a DIY-friendly digital audio environment for _“Sketching digital audio algorithms with the musical playability of standalone hardware.”_ It is open source and was created by the brilliant [Johannes Taelman](https://github.com/JohannesTaelman). [Here](https://www.youtube.com/watch?v=g9yBebl8-vk) the original presentation at the Chaos Computer Club ([CCC](https://www.youtube.com/@mediacccde)). The platform offers comprehensive sound design capabilities, which we can map to the UC33e's physical controls for more intuitive, hands-on manipulation. More info can be found [here](https://ksoloti.github.io/2-background.html).
+Our goal is to control parameters of the AnDrone synthesizer, which runs on the Axoloti board, using the Evolution UC33e MIDI controller. Axoloti is a DIY-friendly digital audio environment for _“Sketching digital audio algorithms with the musical playability of standalone hardware.”_ It is open source and was created by the brilliant [Johannes Taelman](https://github.com/JohannesTaelman). [Here](https://www.youtube.com/watch?v=g9yBebl8-vk) the original presentation at the Chaos Computer Club ([CCC](https://www.youtube.com/@mediacccde)). The platform offers comprehensive sound design capabilities, which we can map to the UC33e's physical controls for more intuitive, hands-on manipulation. More info can be found [here](https://ksoloti.github.io/2-background.html).
 
 ![axo-board](./imgs/axoloti_banner.jpg) 
 *The Axoloti Core board*
 
-The AxoDrone synthesizer is a custom patch created by [Guilherme Martins](https://www.guilhermemartins.net/) and adapted by me.  
+The AnDrone synthesizer is a custom patch created by [Guilherme Martins](https://www.guilhermemartins.net/) and adapted by me.  
 The original patch is available on his personal GitHub [here](https://github.com/guibot/DRONE-ENGINE) and is free to use.
 
 ## Version Specs 📚
-At the time of writing, I developed 2 different versions of the AxoDrone synthesizer, v1 and v2.
+At the time of writing, I developed 2 different versions of the AnDrone synthesizer, v1 and v2.
 Here some specs about the preset number, CC range of the UC33e controller in addition to the related versions matching.
 
-| UC33e Presets | CC Range | AxoDrone Ver. | Purpose |
+| UC33e Presets | CC Range | AnDrone Ver. | Purpose |
 |------|-----|-----|-----|
 | **P22** | 1 - 33  | v1/v2 | Source/Modulation | 
 | **P23**| 34 - 66 | v1 | Effects/Routing | 
@@ -21,11 +21,11 @@ Here some specs about the preset number, CC range of the UC33e controller in add
 | **P25** | 34 - 66 | v2 | Effects/Routing |
 
 
-## AxoDrone V1
+## AnDrone V1
 ### Patch Analysis 🔍
 
 ![axo-drone-patch-v1](./imgs/axoloti_drone_patch_v1.png)  
-*AxoDrone v1 patch*
+*AnDrone v1 patch*
 
 #### Parameter Sections:
 The patch is primarily composed of:
@@ -49,11 +49,11 @@ The possible controls are nearly endless. For simplicity, I decided to divide th
 ![uc33e_page_2](./imgs/uc33e_page_2_v1.jpeg)  
 *P23 preset*
 
-## AxoDrone V2
+## AnDrone V2
 ### Patch Analysis 🔍
 
 ![axo-drone-patch-v2](./imgs/axoloti_drone_patch_v2.png)  
-*AxoDrone v2 patch*
+*AnDrone v2 patch*
 
 #### Parameter Sections:
 There are few changes with respect to the V1:
@@ -66,7 +66,7 @@ There are few changes with respect to the V1:
 We replaced Oscillator 1, 2, 4, 5 with different synthesis models of the well known Mutable Instrument [Braids](https://pichenettes.github.io/mutable-instruments-documentation/modules/braids/) oscillator. You can easly change the synthesis models from the Axoloti patcher.
 
 #### Matrix mixer details:
-In the v2 we added additional signals for expand the modulation capabilities of the AxoDrone.
+In the v2 we added additional signals for expand the modulation capabilities of the AnDrone.
 We use a 3x3 matrix mixer with 3 different modulation as input that can be combine together to build a more complex modulation signals.
 These modulations acts on Osc 4, 5 and 6.
 The flow of the mixer could be better understood by looking the image below (P25 preset) and the patch above.
