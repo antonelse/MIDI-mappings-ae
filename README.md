@@ -20,6 +20,7 @@ This repository contains comprehensive MIDI mapping configurations for the Evolu
 | **Elektron Machinedrum** | ✅ Complete | 1-4 | P01-P17 | 33+ | [View Guide](./elektron_md-evolution_uc33e/GUIDE.md) |
 | **Korg microKORG** | ✅ Complete | 5 | P20 | 36 | [View Guide](./microkorg-evolution_uc33e/GUIDE.md) |
 | **AnDrone** | ✅ Complete | 1 | P22-P25 | 33+ | [View Guide](./axoloti_drone-evolution_uc33e/GUIDE.md) |
+| **Behringer XR18** | ✅ Complete | 6 | P30 | Variable | [View Guide](./behringer_xr18-evolution_uc33e/GUIDE.md) |
 
 ## File Structure
 ```
@@ -34,6 +35,9 @@ MIDI-mappings-ae/
 │   ├── GUIDE.md
 │   ├── imgs/
 │   └── extra/
+├── behringer_xr18-evolution_uc33e/
+│   ├── GUIDE.md
+│   └── imgs/
 ├── controllers/
 ├── manuals/
 ├── complete_dump_UC33e.syx
