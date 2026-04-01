@@ -16,7 +16,7 @@ For each of the 16 machines we have 24 different DATA ENTRY knobs:
 For this configuration, we suggest using a **Control Base Channel** = 1-4, which can be selected in the GLOBAL configuration of the MD.
 
 The CTRL-CHANGE mappings follow these rules [1]:
-![mapping_1](./imgs/uc33e-data_entry.jpg)
+![mapping_1](./imgs/mapping_1.png)
 
 ## MIDI Channel Mapping 📡
 
@@ -47,7 +47,7 @@ The CTRL-CHANGE mappings follow these rules [1]:
 
 ## UC33e Control Allocation 🎹
 Due to this parameter configuration, we can divide the UC33e as follows:
-![uc33e](./imgs/uc33e.jpg)
+![uc33e](./imgs/uc33e-data_entry.jpg)
 
 You can see that each MD page of the DATA ENTRY section fits perfectly in a single row of the UC33e. In other words, the 3 pages of the MD can be entirely mapped to the 3 rows of the UC33e. 
 
@@ -77,6 +77,32 @@ I suggest performing the Assignment operation for **all** DATA ENTRY controls re
 - We choose to use P01 for MD machine 1, P02 for machine 2, and so on
 
 **⚠️ Important**: Wait until the screen stops blinking before proceeding!
+
+### Useful Tip 🔥
+
+By looking at the MIDI implementation chart for the MD, we can notice a pattern of similarities among CCs across different machines. For this reason, I reported a similarity table below that shows which presets, i.e., P1 (MD machines), are similar in terms of MIDI settings. Each row lists the UC33e presets/machines that share the same MIDI implementation — the only difference is the MIDI channel.
+
+| Ch 1 | Ch 2 | Ch 3 | Ch 4 | CC Range |
+|------|------|------|------|----------|
+| P1   | P5   | P9   | P13  | 16-39    |
+| P2   | P6   | P10  | P14  | 40-63    |
+| P3   | P7   | P11  | P15  | 72-95    |
+| P4   | P8   | P12  | P16  | 96-119   |
+
+**Example:**
+
+P1 maps CC parameters from 16 to 39 on MIDI channel 1, which corresponds to a full mapping of MD machine 1 to the UC33e. P5, which maps MD machine 5, is identical — the only difference is the MIDI channel of the CCs. Therefore, copying (or better, saving) P1 into P5 and changing only the MIDI channel from 1 to 2 does the job, avoiding the need to redo the CC mapping from scratch.
+
+**Note:** 
+
+When performing the Copy/Paste operation, keep in mind the custom UC33e fader assignment mapping described before, as well as the CC implementation chart available in the MD manual:
+
+1. Faders of UC33e presets from P1 to P8 controls MD machine from 1 to 8
+	* Faders from P1 to P4 must be set to MIDI channel 1
+	* Faders from P5 to P8 must be set to MIDI channel 2
+2. Faders of UC33e presets from P9 to P16 controls MD machine from 9 to 16
+	* Faders from P9 to P12 must be set to MIDI channel 3
+	* Faders from P13 to P16 must be set to MIDI channel 4
 
 ## Workflow 🔄
 As mentioned, we assign preset numbers (e.g., P03) to correspond with MD machines (e.g., machine 3, or *Track 3* in the manual[1]). Each UC33e preset stores mapping information for a single MD machine.
