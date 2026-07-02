@@ -6,8 +6,8 @@ Our goal is to control parameters of the AnDrone synthesizer, which runs on the 
 ![axo-board](./imgs/axoloti_banner.jpg) 
 *The Axoloti Core board*
 
-The AnDrone synthesizer is a custom patch created by [Guilherme Martins](https://www.guilhermemartins.net/) and adapted by me.  
-The original patch is available on his personal GitHub [here](https://github.com/guibot/DRONE-ENGINE) and is free to use.
+The AnDrone synthesizer was inspired by a patch from [Guilherme Martins](https://www.guilhermemartins.net/) ([original patch](https://github.com/guibot/DRONE-ENGINE)).
+
 
 ## Version Specs 📚
 At the time of writing, I developed 2 different versions of the AnDrone synthesizer, v1 and v2.
@@ -52,8 +52,14 @@ The possible controls are nearly endless. For simplicity, I decided to divide th
 ## AnDrone V2
 ### Patch Analysis 🔍
 
-![axo-drone-patch-v2](./imgs/axoloti_drone_patch_v2.png)  
-*AnDrone v2 patch*
+![axo-drone-patch-osc_1-2-3](./imgs/osc_1-2-3.png)  
+*AnDrone v2 patch - Oscillators 1, 2, 3*
+
+![axo-drone-patch-osc_4-5-6](./imgs/osc_4-5-6.png)  
+*AnDrone v2 patch - Oscillators 4, 5, 6*
+
+![axo-drone-patch-fx_out](./imgs/fx_out.png)  
+*AnDrone v2 patch - FX and Output Stage*
 
 #### Parameter Sections:
 There are few changes with respect to the V1:
@@ -72,9 +78,15 @@ These modulations acts on Osc 4, 5 and 6.
 The flow of the mixer could be better understood by looking the image below (P25 preset) and the patch above.
 In specific:
 
-- out1 signal is summed with the timbre mod of Osc 4
-- out2 signal is summed with the timbre mod of Osc 5
-- out4 signal modulate alone the pitch of Osc 6
+- Input 
+	- `src1` is a slow sine signal
+	- `src2 ` is a slow ramp signal
+	- `src3 ` is a random drift signal
+
+- Output 
+	- `out1` signal is summed with the timbre mod of OSC 4
+	- `out2` signal is summed with the timbre mod of OSC 5
+	- `out3` signal modulate alone the pitch of OSC 6
 
 ### UC33e Mapping Configuration 🎹
 
@@ -112,9 +124,10 @@ I decided to divide the mapping into 3 pages (presets P22, P24 and P25 on the UC
 ## TODO List 📝
 - Understand MSB and LSB parameters for higher resolution control
 - Think about the addition of the play/pause/fwd buttons in the bottom right (burst like modulation ?)
-- Add crackle noise
+- Add noisefloor
 - Optimize CPU usage
 - Add more informative compressor control
+- Add soft clipping stage after filter stage
 
 ## AxoLove ❤️
 ![axoloti_board](./imgs/axoloti_core_v1.2.jpg)  

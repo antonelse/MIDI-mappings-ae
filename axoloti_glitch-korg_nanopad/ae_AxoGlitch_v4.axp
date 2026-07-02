@@ -1,0 +1,1675 @@
+<patch-1.0 appVersion="1.0.12">
+   <comment type="patch/comment" x="42" y="14" text="LAG"/>
+   <comment type="patch/comment" x="868" y="14" text="EXTERNAL IN"/>
+   <comment type="patch/comment" x="980" y="14" text="MAIN MODULE"/>
+   <comment type="patch/comment" x="1330" y="14" text="DRY "/>
+   <comment type="patch/comment" x="1470" y="14" text="EXCLUSIVE OUT LOGIC"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_14" x="1694" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="14" text="REPEATER"/>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_2" x="42" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="112" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_1__temp" x="196" y="28">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="36"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_1__temp" x="308" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_1" x="392" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_1" x="518" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/in stereo" uuid="99848ad6d90a8e615e83b2e619cfc806f28e7281" name="in_1" x="868" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="sss/fx/glitchBeast" uuid="cd4840cb-7536-4a15-9683-00359115d395" name="glitchBeast_1" x="980" y="28">
+      <params>
+         <frac32.u.map name="mix" value="64.0"/>
+      </params>
+      <attribs>
+         <combo attributeName="size" selection="65536 (1.36s)"/>
+      </attribs>
+   </obj>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_2" x="1162" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/i" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_1" x="1218" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*c" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="*c_1" x="1330" y="28">
+      <params>
+         <frac32.u.map name="amp" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mux/mux 2" uuid="539c246f4c360ac476e128cfbfa84348fb7f7e73" name="mux_1" x="1470" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="1582" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_14" x="1792" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_10" x="1918" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_10" x="2002" y="28">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="45"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_10" x="2128" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_4" x="2198" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_2" x="308" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_11" x="1918" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="TSG/fx/reverb cheap" uuid="4ac5f59f-366c-4cec-a53d-5d549f2d262f" name="obj_1" x="1162" y="98">
+      <params>
+         <frac32.u.map name="PreDelay" value="17.5"/>
+         <frac32.u.map name="decay" value="25.0"/>
+         <frac32.u.map name="LowDamp" value="15.0"/>
+         <frac32.u.map name="HighDamp" value="0.0"/>
+         <frac32.u.map name="size" value="64.0"/>
+         <frac32.s.map name="mod_:pitch" value="-16.0"/>
+         <frac32.u.map name="mod_:gain" value="7.5"/>
+         <frac32.u.map name="mix" value="25.0"/>
+         <frac32.u.map name="diffusion" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_15" x="1694" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_15" x="1792" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*c" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="*c_2" x="1330" y="112">
+      <params>
+         <frac32.u.map name="amp" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mux/mux 2" uuid="539c246f4c360ac476e128cfbfa84348fb7f7e73" name="mux_2" x="1470" y="112">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_22" x="1540" y="140">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="154" text="RETRIG"/>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_3" x="42" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_2" x="112" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_2" x="196" y="168">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="37"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_2" x="308" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_2" x="392" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_2" x="518" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb" uuid="53b04874696932f38aceaa168bd5d9efb743716d" name="keyb_1" x="1470" y="196">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_3" x="308" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1330" y="210" text="WET"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_16" x="1694" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="210" text="RING MOD"/>
+   <obj type="math/*c" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="*c_3" x="1330" y="224">
+      <params>
+         <frac32.u.map name="amp" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_16" x="1792" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_11" x="1918" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_11" x="2002" y="224">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="46"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_11" x="2128" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_5" x="2198" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_12" x="1918" y="266">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="294" text="GAP"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_3" x="518" y="294">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_17" x="1694" y="294">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_17" x="1792" y="294">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_30" x="42" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_3" x="112" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_3" x="196" y="308">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="38"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_3" x="308" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_3" x="392" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*c" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="*c_4" x="1330" y="308">
+      <params>
+         <frac32.u.map name="amp" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_4" x="308" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_4" x="392" y="378">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_4" x="518" y="378">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="392" text="PAN"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_18" x="1694" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_18" x="1792" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_12" x="1918" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_12" x="2002" y="406">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="47"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_12" x="2128" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_6" x="2198" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_13" x="1918" y="448">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="476" text="REVERSE"/>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_31" x="42" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_4" x="112" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_4" x="196" y="490">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="39"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_4" x="308" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_5" x="392" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_5" x="518" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_5" x="308" y="532">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_19" x="1694" y="532">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_19" x="1792" y="546">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="560" text="FILTER"/>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_13" x="1918" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_13" x="2002" y="574">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="48"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_13" x="2128" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_7" x="2198" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="616" text="TAPESTOP"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_20" x="1694" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_20" x="1792" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_14" x="1918" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_32" x="42" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_5" x="112" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_5" x="196" y="630">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="40"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_5" x="308" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_6" x="392" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_6" x="518" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_6" x="308" y="672">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_21" x="1792" y="686">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_21" x="1694" y="700">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="756" text="LFO MOD"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_7" x="518" y="756">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_35" x="42" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_6" x="112" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_6" x="196" y="770">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="41"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_6" x="308" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_7" x="392" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_22" x="1694" y="798">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_7" x="308" y="812">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_22" x="1792" y="812">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="826" text="REPEATER"/>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_8" x="392" y="840">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_8" x="518" y="840">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_14" x="1918" y="840">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_14" x="2002" y="840">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="49"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_14" x="2128" y="840">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_8" x="2198" y="840">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_23" x="1694" y="882">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_23" x="1792" y="882">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_15" x="1918" y="882">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/monitor" uuid="b51863ca-6afa-4d29-acfd-c8c2fe06cb16" name="monitor_1" x="980" y="924">
+      <params>
+         <bool32.tgl name="ControlChange" value="0"/>
+         <bool32.tgl name="Note" value="0"/>
+         <bool32.tgl name="ProgramChange" value="0"/>
+         <bool32.tgl name="Bend" value="0"/>
+         <bool32.tgl name="PolyPressure" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="938" text="SAMPLERATE"/>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_36" x="42" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_7" x="112" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_7" x="196" y="952">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="42"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_7" x="308" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_9" x="392" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_9" x="518" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_24" x="1792" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_24" x="1694" y="966">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_8" x="308" y="994">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="1078" text="SPATIAL"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_25" x="1694" y="1078">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_37" x="42" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_8" x="112" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_8" x="196" y="1092">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="43"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_8" x="308" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_10" x="392" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_10" x="518" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_25" x="1792" y="1092">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2170" y="1106" text="PITCH SHIFTER"/>
+   <comment type="patch/comment" x="896" y="1120" text="PAD X/Y"/>
+   <comment type="patch/comment" x="1050" y="1120" text="DEFAULT PARAMS"/>
+   <comment type="patch/comment" x="1274" y="1120" text="RND PARAMS"/>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_15" x="1918" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_15" x="2002" y="1120">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="52"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_15" x="2128" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_9" x="2198" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_9" x="308" y="1134">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="868" y="1148" text="X"/>
+   <comment type="patch/comment" x="938" y="1148" text="Y"/>
+   <comment type="patch/comment" x="1246" y="1148" text="X"/>
+   <comment type="patch/comment" x="1316" y="1148" text="Y"/>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_4" x="868" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_5" x="938" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_2" x="1078" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_1" x="1246" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_3" x="1316" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_26" x="1694" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_26" x="1792" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_16" x="1918" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="42" y="1218" text="PHASER"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_11" x="518" y="1218">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_38" x="42" y="1232">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_9" x="112" y="1232">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_9" x="196" y="1232">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="44"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_9" x="308" y="1232">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_11" x="392" y="1232">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="882" y="1246" text="X"/>
+   <comment type="patch/comment" x="1232" y="1246" text="X"/>
+   <comment type="patch/comment" x="1330" y="1246" text="Y"/>
+   <obj type="midi/in/cc" uuid="6096d217701cbdf251a9ab6ba029af78c5722a56" name="cc_1" x="882" y="1260">
+      <params/>
+      <attribs>
+         <spinner attributeName="cc" value="1"/>
+         <spinner attributeName="default" value="0"/>
+      </attribs>
+   </obj>
+   <obj type="math/*" uuid="13882852b58661ad012ffbe246470b5df4b6c5d1" name="*_4" x="1050" y="1260">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+c" uuid="13eec32bd8ad57dd0bb18a02566cc0a117d320e3" name="+c_1" x="1106" y="1260">
+      <params>
+         <frac32.u.map name="c" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="13882852b58661ad012ffbe246470b5df4b6c5d1" name="*_5" x="1232" y="1260">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="13882852b58661ad012ffbe246470b5df4b6c5d1" name="*_7" x="1330" y="1260">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="1260" text="SCRATCH"/>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_10" x="308" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_27" x="1694" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_27" x="1792" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_16" x="1918" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_16" x="2002" y="1274">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="53"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_16" x="2128" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_10" x="2198" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_12" x="392" y="1302">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_12" x="518" y="1302">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_17" x="1918" y="1316">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rand/uniform f" uuid="8f20d4eee60d56a57c11111c7028f69d6039b658" name="uniform_1" x="1232" y="1330">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/abs" uuid="4ae01ff03753539d9028888689654235fa199936" name="abs_1" x="1330" y="1330">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="882" y="1358" text="Y"/>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_13" x="392" y="1372">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/cc" uuid="6096d217701cbdf251a9ab6ba029af78c5722a56" name="cc_2" x="882" y="1372">
+      <params/>
+      <attribs>
+         <spinner attributeName="cc" value="2"/>
+         <spinner attributeName="default" value="0"/>
+      </attribs>
+   </obj>
+   <obj type="rand/uniform f" uuid="8f20d4eee60d56a57c11111c7028f69d6039b658" name="uniform_2" x="1232" y="1372">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/abs" uuid="4ae01ff03753539d9028888689654235fa199936" name="abs_2" x="1330" y="1372">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_13" x="518" y="1386">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2184" y="1386" text="RANDOM JAM"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_28" x="1694" y="1400">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_28" x="1792" y="1400">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_17" x="1918" y="1400">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_17" x="2002" y="1400">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="54"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_17" x="2128" y="1400">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_11" x="2198" y="1400">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_18" x="1918" y="1442">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/or 2" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="or_1" x="1050" y="1456">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_21" x="1120" y="1456">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/or 2" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="or_2" x="1232" y="1456">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_20" x="1302" y="1456">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="2198" y="1512" text="OCTAVER"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_20" x="1050" y="1526">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="50"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_21" x="1232" y="1526">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="51"/>
+      </attribs>
+   </obj>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_29" x="1694" y="1526">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_29" x="1792" y="1526">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_18" x="1918" y="1526">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_18" x="2002" y="1526">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="55"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_18" x="2128" y="1526">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_12" x="2198" y="1526">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_19" x="1918" y="1568">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_23" x="1232" y="1610">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="67"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_22" x="1050" y="1624">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="66"/>
+      </attribs>
+   </obj>
+   <comment type="patch/comment" x="2198" y="1666" text="SUB"/>
+   <obj type="drj/math/sum3" uuid="93cb11244907aed86ae7d7f2274d118a23d46692" name="sum3_30" x="1694" y="1680">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rbrt/control/gate_hold" uuid="4c315d47-8c76-4c21-bf06-e3d5001b8c21" name="gate_hold_30" x="1792" y="1680">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_19" x="1918" y="1680">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_19" x="2002" y="1680">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="56"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_19" x="2128" y="1680">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_13" x="2198" y="1680">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_20" x="1918" y="1722">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="glitchBeast_1" outlet="outL"/>
+         <dest obj="vu_2" inlet="in"/>
+         <dest obj="obj_1" inlet="InL"/>
+      </net>
+      <net>
+         <source obj="toggle_2" outlet="o"/>
+         <dest obj="bool_1" inlet="in"/>
+         <dest obj="gate_hold_1" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Glag"/>
+      </net>
+      <net>
+         <source obj="keyb_2" outlet="gate"/>
+         <dest obj="change_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_2" outlet="trig"/>
+         <dest obj="toggle_3" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_3" outlet="gate"/>
+         <dest obj="change_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_3" outlet="trig"/>
+         <dest obj="toggle_4" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_4" outlet="gate"/>
+         <dest obj="change_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_4" outlet="trig"/>
+         <dest obj="toggle_5" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_5" outlet="gate"/>
+         <dest obj="change_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_5" outlet="trig"/>
+         <dest obj="toggle_6" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_6" outlet="gate"/>
+         <dest obj="change_6" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_6" outlet="trig"/>
+         <dest obj="toggle_7" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_7" outlet="gate"/>
+         <dest obj="change_7" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_7" outlet="trig"/>
+         <dest obj="toggle_8" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_8" outlet="gate"/>
+         <dest obj="change_8" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_8" outlet="trig"/>
+         <dest obj="toggle_9" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_9" outlet="gate"/>
+         <dest obj="change_9" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_9" outlet="trig"/>
+         <dest obj="toggle_10" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_10" outlet="gate"/>
+         <dest obj="change_10" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_10" outlet="trig"/>
+         <dest obj="toggle_11" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_3" outlet="o"/>
+         <dest obj="bool_2" inlet="in"/>
+         <dest obj="gate_hold_2" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gretrig"/>
+      </net>
+      <net>
+         <source obj="toggle_4" outlet="o"/>
+         <dest obj="bool_3" inlet="in"/>
+         <dest obj="gate_hold_3" inlet="gate"/>
+         <dest obj="gate_hold_4" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Ggap"/>
+      </net>
+      <net>
+         <source obj="toggle_5" outlet="o"/>
+         <dest obj="bool_4" inlet="in"/>
+         <dest obj="gate_hold_5" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Greverse"/>
+      </net>
+      <net>
+         <source obj="toggle_6" outlet="o"/>
+         <dest obj="bool_5" inlet="in"/>
+         <dest obj="gate_hold_6" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gtapestop"/>
+      </net>
+      <net>
+         <source obj="toggle_7" outlet="o"/>
+         <dest obj="bool_6" inlet="in"/>
+         <dest obj="gate_hold_7" inlet="gate"/>
+         <dest obj="gate_hold_8" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gmod"/>
+      </net>
+      <net>
+         <source obj="toggle_8" outlet="o"/>
+         <dest obj="bool_7" inlet="in"/>
+         <dest obj="gate_hold_9" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gsr"/>
+      </net>
+      <net>
+         <source obj="toggle_9" outlet="o"/>
+         <dest obj="bool_8" inlet="in"/>
+         <dest obj="gate_hold_10" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gspatial"/>
+      </net>
+      <net>
+         <source obj="toggle_10" outlet="o"/>
+         <dest obj="bool_9" inlet="in"/>
+         <dest obj="gate_hold_11" inlet="gate"/>
+         <dest obj="gate_hold_12" inlet="gate"/>
+         <dest obj="gate_hold_13" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gphaser"/>
+      </net>
+      <net>
+         <source obj="toggle_11" outlet="o"/>
+         <dest obj="gate_hold_14" inlet="gate"/>
+         <dest obj="gate_hold_15" inlet="gate"/>
+         <dest obj="bool_10" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="Grepeater"/>
+      </net>
+      <net>
+         <source obj="keyb_11" outlet="gate"/>
+         <dest obj="change_11" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_11" outlet="trig"/>
+         <dest obj="toggle_12" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_12" outlet="gate"/>
+         <dest obj="change_12" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_12" outlet="trig"/>
+         <dest obj="toggle_13" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_13" outlet="gate"/>
+         <dest obj="change_13" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_13" outlet="trig"/>
+         <dest obj="toggle_14" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_14" outlet="gate"/>
+         <dest obj="change_14" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_14" outlet="trig"/>
+         <dest obj="toggle_15" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_15" outlet="gate"/>
+         <dest obj="change_15" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_15" outlet="trig"/>
+         <dest obj="toggle_16" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_16" outlet="gate"/>
+         <dest obj="change_16" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_16" outlet="trig"/>
+         <dest obj="toggle_17" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_17" outlet="gate"/>
+         <dest obj="change_17" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_17" outlet="trig"/>
+         <dest obj="toggle_18" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_18" outlet="gate"/>
+         <dest obj="change_18" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_18" outlet="trig"/>
+         <dest obj="toggle_19" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_12" outlet="o"/>
+         <dest obj="gate_hold_16" inlet="gate"/>
+         <dest obj="gate_hold_17" inlet="gate"/>
+         <dest obj="bool_11" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="Gring"/>
+      </net>
+      <net>
+         <source obj="toggle_13" outlet="o"/>
+         <dest obj="gate_hold_18" inlet="gate"/>
+         <dest obj="bool_12" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="Gpan"/>
+      </net>
+      <net>
+         <source obj="toggle_14" outlet="o"/>
+         <dest obj="bool_13" inlet="in"/>
+         <dest obj="gate_hold_19" inlet="gate"/>
+         <dest obj="gate_hold_20" inlet="gate"/>
+         <dest obj="gate_hold_21" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gfilter"/>
+      </net>
+      <net>
+         <source obj="toggle_15" outlet="o"/>
+         <dest obj="bool_14" inlet="in"/>
+         <dest obj="gate_hold_22" inlet="gate"/>
+         <dest obj="gate_hold_23" inlet="gate"/>
+         <dest obj="gate_hold_24" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Ggrain"/>
+      </net>
+      <net>
+         <source obj="toggle_16" outlet="o"/>
+         <dest obj="bool_15" inlet="in"/>
+         <dest obj="gate_hold_25" inlet="gate"/>
+         <dest obj="gate_hold_26" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gpitchshifter"/>
+      </net>
+      <net>
+         <source obj="toggle_17" outlet="o"/>
+         <dest obj="bool_16" inlet="in"/>
+         <dest obj="gate_hold_27" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gscratch"/>
+      </net>
+      <net>
+         <source obj="toggle_18" outlet="o"/>
+         <dest obj="bool_17" inlet="in"/>
+         <dest obj="gate_hold_28" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="GrndJam"/>
+      </net>
+      <net>
+         <source obj="toggle_19" outlet="o"/>
+         <dest obj="bool_18" inlet="in"/>
+         <dest obj="gate_hold_29" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Goctaver"/>
+      </net>
+      <net>
+         <source obj="keyb_19" outlet="gate"/>
+         <dest obj="change_19" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_19" outlet="trig"/>
+         <dest obj="toggle_20" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_20" outlet="o"/>
+         <dest obj="bool_19" inlet="in"/>
+         <dest obj="gate_hold_30" inlet="gate"/>
+         <dest obj="glitchBeast_1" inlet="Gsub"/>
+      </net>
+      <net>
+         <source obj="glitchBeast_1" outlet="samplelength"/>
+         <dest obj="i_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="keyb_1__temp" outlet="gate"/>
+         <dest obj="change_1__temp" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_1__temp" outlet="trig"/>
+         <dest obj="toggle_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="gate_hold_1" outlet="out"/>
+         <dest obj="dial_2" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="CVlag"/>
+      </net>
+      <net>
+         <source obj="+c_1" outlet="out"/>
+         <dest obj="*_4" inlet="a"/>
+      </net>
+      <net>
+         <source obj="uniform_1" outlet="wave"/>
+         <dest obj="abs_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="abs_1" outlet="out"/>
+         <dest obj="*_5" inlet="a"/>
+      </net>
+      <net>
+         <source obj="uniform_2" outlet="wave"/>
+         <dest obj="abs_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="abs_2" outlet="out"/>
+         <dest obj="*_7" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keyb_21" outlet="gate"/>
+         <dest obj="or_2" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="sum3_1" outlet="out"/>
+         <dest obj="gate_hold_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_2" outlet="out"/>
+         <dest obj="dial_3" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="CVretrig"/>
+      </net>
+      <net>
+         <source obj="sum3_2" outlet="out"/>
+         <dest obj="gate_hold_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_3" outlet="out"/>
+         <dest obj="dial_30" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="gap"/>
+      </net>
+      <net>
+         <source obj="gate_hold_4" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="offset"/>
+      </net>
+      <net>
+         <source obj="sum3_3" outlet="out"/>
+         <dest obj="gate_hold_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_4" outlet="out"/>
+         <dest obj="gate_hold_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_5" outlet="out"/>
+         <dest obj="dial_31" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="reverserate"/>
+      </net>
+      <net>
+         <source obj="*_5" outlet="result"/>
+         <dest obj="+_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="*_4" outlet="result"/>
+         <dest obj="+_2" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="*_7" outlet="result"/>
+         <dest obj="+_3" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="cc_1" outlet="midiCC"/>
+         <dest obj="+_4" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="cc_2" outlet="midiCC"/>
+         <dest obj="+_5" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="sum3_5" outlet="out"/>
+         <dest obj="gate_hold_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_6" outlet="out"/>
+         <dest obj="gate_hold_6" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_6" outlet="out"/>
+         <dest obj="dial_32" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="stoprate"/>
+      </net>
+      <net>
+         <source obj="sum3_7" outlet="out"/>
+         <dest obj="gate_hold_7" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_8" outlet="out"/>
+         <dest obj="gate_hold_8" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_9" outlet="out"/>
+         <dest obj="gate_hold_9" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_7" outlet="out"/>
+         <dest obj="dial_35" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="modrate"/>
+      </net>
+      <net>
+         <source obj="gate_hold_8" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="modwidth"/>
+      </net>
+      <net>
+         <source obj="gate_hold_9" outlet="out"/>
+         <dest obj="dial_36" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="samplerate"/>
+      </net>
+      <net>
+         <source obj="sum3_10" outlet="out"/>
+         <dest obj="gate_hold_10" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_10" outlet="out"/>
+         <dest obj="dial_37" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="spatial"/>
+      </net>
+      <net>
+         <source obj="gate_hold_11" outlet="out"/>
+         <dest obj="dial_38" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="preRate"/>
+      </net>
+      <net>
+         <source obj="sum3_11" outlet="out"/>
+         <dest obj="gate_hold_11" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_12" outlet="out"/>
+         <dest obj="gate_hold_12" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_13" outlet="out"/>
+         <dest obj="gate_hold_13" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_12" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="feedRate"/>
+      </net>
+      <net>
+         <source obj="gate_hold_13" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="feedback"/>
+      </net>
+      <net>
+         <source obj="sum3_14" outlet="out"/>
+         <dest obj="gate_hold_14" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_15" outlet="out"/>
+         <dest obj="gate_hold_15" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_14" outlet="out"/>
+         <dest obj="dial_4" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="repeatSize"/>
+      </net>
+      <net>
+         <source obj="gate_hold_15" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="repeats"/>
+      </net>
+      <net>
+         <source obj="sum3_16" outlet="out"/>
+         <dest obj="gate_hold_16" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_17" outlet="out"/>
+         <dest obj="gate_hold_17" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_16" outlet="out"/>
+         <dest obj="dial_5" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="ringRate"/>
+      </net>
+      <net>
+         <source obj="gate_hold_17" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="ringGain"/>
+      </net>
+      <net>
+         <source obj="sum3_18" outlet="out"/>
+         <dest obj="gate_hold_18" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_18" outlet="out"/>
+         <dest obj="dial_6" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="panRate"/>
+      </net>
+      <net>
+         <source obj="sum3_19" outlet="out"/>
+         <dest obj="gate_hold_19" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_20" outlet="out"/>
+         <dest obj="gate_hold_20" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_21" outlet="out"/>
+         <dest obj="gate_hold_21" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_19" outlet="out"/>
+         <dest obj="dial_7" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="filterMode"/>
+      </net>
+      <net>
+         <source obj="gate_hold_20" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="filterFreq"/>
+      </net>
+      <net>
+         <source obj="gate_hold_21" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="filterRes"/>
+      </net>
+      <net>
+         <source obj="sum3_22" outlet="out"/>
+         <dest obj="gate_hold_22" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_23" outlet="out"/>
+         <dest obj="gate_hold_23" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_24" outlet="out"/>
+         <dest obj="gate_hold_24" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_22" outlet="out"/>
+         <dest obj="dial_8" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="grainSize"/>
+      </net>
+      <net>
+         <source obj="gate_hold_23" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="grainPosition"/>
+      </net>
+      <net>
+         <source obj="gate_hold_24" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="grainRate"/>
+      </net>
+      <net>
+         <source obj="sum3_25" outlet="out"/>
+         <dest obj="gate_hold_25" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_26" outlet="out"/>
+         <dest obj="gate_hold_26" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_25" outlet="out"/>
+         <dest obj="dial_9" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="pitchShift"/>
+      </net>
+      <net>
+         <source obj="gate_hold_26" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="window"/>
+      </net>
+      <net>
+         <source obj="sum3_27" outlet="out"/>
+         <dest obj="gate_hold_27" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_27" outlet="out"/>
+         <dest obj="dial_10" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="scratch"/>
+      </net>
+      <net>
+         <source obj="sum3_28" outlet="out"/>
+         <dest obj="gate_hold_28" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_29" outlet="out"/>
+         <dest obj="gate_hold_29" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sum3_30" outlet="out"/>
+         <dest obj="gate_hold_30" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gate_hold_28" outlet="out"/>
+         <dest obj="dial_11" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="rndRate"/>
+      </net>
+      <net>
+         <source obj="gate_hold_29" outlet="out"/>
+         <dest obj="dial_12" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="octaver"/>
+      </net>
+      <net>
+         <source obj="gate_hold_30" outlet="out"/>
+         <dest obj="dial_13" inlet="in"/>
+         <dest obj="glitchBeast_1" inlet="subRate"/>
+      </net>
+      <net>
+         <source obj="+_4" outlet="out"/>
+         <dest obj="sum3_1" inlet="in1"/>
+         <dest obj="sum3_2" inlet="in1"/>
+         <dest obj="sum3_3" inlet="in1"/>
+         <dest obj="sum3_5" inlet="in1"/>
+         <dest obj="sum3_6" inlet="in1"/>
+         <dest obj="sum3_7" inlet="in1"/>
+         <dest obj="sum3_9" inlet="in1"/>
+         <dest obj="sum3_10" inlet="in1"/>
+         <dest obj="sum3_11" inlet="in1"/>
+         <dest obj="sum3_14" inlet="in1"/>
+         <dest obj="sum3_16" inlet="in1"/>
+         <dest obj="sum3_18" inlet="in1"/>
+         <dest obj="sum3_19" inlet="in1"/>
+         <dest obj="sum3_22" inlet="in1"/>
+         <dest obj="sum3_25" inlet="in1"/>
+         <dest obj="sum3_27" inlet="in1"/>
+         <dest obj="sum3_29" inlet="in1"/>
+         <dest obj="sum3_30" inlet="in1"/>
+         <dest obj="sum3_28" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_5" outlet="out"/>
+         <dest obj="sum3_4" inlet="in1"/>
+         <dest obj="sum3_8" inlet="in1"/>
+         <dest obj="sum3_12" inlet="in1"/>
+         <dest obj="sum3_13" inlet="in1"/>
+         <dest obj="sum3_15" inlet="in1"/>
+         <dest obj="sum3_17" inlet="in1"/>
+         <dest obj="sum3_20" inlet="in1"/>
+         <dest obj="sum3_21" inlet="in1"/>
+         <dest obj="sum3_23" inlet="in1"/>
+         <dest obj="sum3_24" inlet="in1"/>
+         <dest obj="sum3_26" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_2" outlet="out"/>
+         <dest obj="sum3_1" inlet="in2"/>
+         <dest obj="sum3_2" inlet="in2"/>
+         <dest obj="sum3_3" inlet="in2"/>
+         <dest obj="sum3_4" inlet="in2"/>
+         <dest obj="sum3_5" inlet="in2"/>
+         <dest obj="sum3_6" inlet="in2"/>
+         <dest obj="sum3_7" inlet="in2"/>
+         <dest obj="sum3_8" inlet="in2"/>
+         <dest obj="sum3_9" inlet="in2"/>
+         <dest obj="sum3_10" inlet="in2"/>
+         <dest obj="sum3_11" inlet="in2"/>
+         <dest obj="sum3_12" inlet="in2"/>
+         <dest obj="sum3_13" inlet="in2"/>
+         <dest obj="sum3_14" inlet="in2"/>
+         <dest obj="sum3_15" inlet="in2"/>
+         <dest obj="sum3_16" inlet="in2"/>
+         <dest obj="sum3_17" inlet="in2"/>
+         <dest obj="sum3_18" inlet="in2"/>
+         <dest obj="sum3_19" inlet="in2"/>
+         <dest obj="sum3_20" inlet="in2"/>
+         <dest obj="sum3_21" inlet="in2"/>
+         <dest obj="sum3_22" inlet="in2"/>
+         <dest obj="sum3_23" inlet="in2"/>
+         <dest obj="sum3_24" inlet="in2"/>
+         <dest obj="sum3_25" inlet="in2"/>
+         <dest obj="sum3_26" inlet="in2"/>
+         <dest obj="sum3_27" inlet="in2"/>
+         <dest obj="sum3_28" inlet="in2"/>
+         <dest obj="sum3_29" inlet="in2"/>
+         <dest obj="sum3_30" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="+_1" outlet="out"/>
+         <dest obj="sum3_1" inlet="in3"/>
+         <dest obj="sum3_2" inlet="in3"/>
+         <dest obj="sum3_3" inlet="in3"/>
+         <dest obj="sum3_5" inlet="in3"/>
+         <dest obj="sum3_6" inlet="in3"/>
+         <dest obj="sum3_7" inlet="in3"/>
+         <dest obj="sum3_9" inlet="in3"/>
+         <dest obj="sum3_10" inlet="in3"/>
+         <dest obj="sum3_11" inlet="in3"/>
+         <dest obj="sum3_14" inlet="in3"/>
+         <dest obj="sum3_16" inlet="in3"/>
+         <dest obj="sum3_18" inlet="in3"/>
+         <dest obj="sum3_19" inlet="in3"/>
+         <dest obj="sum3_22" inlet="in3"/>
+         <dest obj="sum3_25" inlet="in3"/>
+         <dest obj="sum3_27" inlet="in3"/>
+         <dest obj="sum3_28" inlet="in3"/>
+         <dest obj="sum3_29" inlet="in3"/>
+         <dest obj="sum3_30" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="+_3" outlet="out"/>
+         <dest obj="sum3_4" inlet="in3"/>
+         <dest obj="sum3_8" inlet="in3"/>
+         <dest obj="sum3_12" inlet="in3"/>
+         <dest obj="sum3_13" inlet="in3"/>
+         <dest obj="sum3_15" inlet="in3"/>
+         <dest obj="sum3_17" inlet="in3"/>
+         <dest obj="sum3_20" inlet="in3"/>
+         <dest obj="sum3_21" inlet="in3"/>
+         <dest obj="sum3_23" inlet="in3"/>
+         <dest obj="sum3_24" inlet="in3"/>
+         <dest obj="sum3_26" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="keyb_20" outlet="gate"/>
+         <dest obj="or_1" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="keyb_22" outlet="gate"/>
+         <dest obj="or_1" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="keyb_23" outlet="gate"/>
+         <dest obj="or_2" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="or_1" outlet="o"/>
+         <dest obj="*_4" inlet="b"/>
+         <dest obj="bool_21" inlet="in"/>
+      </net>
+      <net>
+         <source obj="or_2" outlet="o"/>
+         <dest obj="*_5" inlet="b"/>
+         <dest obj="*_7" inlet="b"/>
+         <dest obj="bool_20" inlet="in"/>
+      </net>
+      <net>
+         <source obj="in_1" outlet="left"/>
+         <dest obj="glitchBeast_1" inlet="inL"/>
+         <dest obj="*c_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="in_1" outlet="right"/>
+         <dest obj="glitchBeast_1" inlet="inR"/>
+         <dest obj="*c_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="keyb_1" outlet="gate"/>
+         <dest obj="mux_1" inlet="s"/>
+         <dest obj="bool_22" inlet="in"/>
+         <dest obj="mux_2" inlet="s"/>
+      </net>
+      <net>
+         <source obj="mux_1" outlet="o"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="mux_2" outlet="o"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="glitchBeast_1" outlet="outR"/>
+         <dest obj="obj_1" inlet="InR"/>
+      </net>
+      <net>
+         <source obj="*c_1" outlet="out"/>
+         <dest obj="mux_1" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="*c_2" outlet="out"/>
+         <dest obj="mux_2" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="l"/>
+         <dest obj="*c_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="r"/>
+         <dest obj="*c_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="*c_3" outlet="out"/>
+         <dest obj="mux_1" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="*c_4" outlet="out"/>
+         <dest obj="mux_2" inlet="i2"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+      <MidiChannel>1</MidiChannel>
+      <NModulationSources>0</NModulationSources>
+      <NModulationTargetsPerSource>0</NModulationTargetsPerSource>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>-407</x>
+      <y>-1415</y>
+      <width>2560</width>
+      <height>1415</height>
+   </windowPos>
+</patch-1.0>

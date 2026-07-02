@@ -1,0 +1,928 @@
+<patch-1.0 appVersion="1.0.12">
+   <comment type="patch/comment" x="126" y="14" text="LAG"/>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_1" x="728" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/monitor" uuid="b51863ca-6afa-4d29-acfd-c8c2fe06cb16" name="monitor_1" x="812" y="14">
+      <params>
+         <bool32.tgl name="ControlChange" value="1"/>
+         <bool32.tgl name="Note" value="1"/>
+         <bool32.tgl name="ProgramChange" value="1"/>
+         <bool32.tgl name="Bend" value="1"/>
+         <bool32.tgl name="PolyPressure" value="1"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="14" text="REPEATER"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_1" x="126" y="28">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="36"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_1" x="238" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_2" x="322" y="28">
+      <params>
+         <frac32.u.map name="value" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_24" x="1106" y="28">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_11" x="1176" y="28">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_10" x="1246" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_10" x="1330" y="28">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="45"/>
+      </attribs>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_2" x="238" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_11" x="1246" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/supersaw" uuid="ece83feb36cfaee7dc3964b75c485774ea0309cf" name="supersaw_1" x="686" y="84">
+      <params>
+         <frac32.s.map name="pitch" value="0.0"/>
+         <frac32.u.map name="detune" value="35.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="140" text="RING MOD"/>
+   <comment type="patch/comment" x="126" y="154" text="RETRIG"/>
+   <obj type="disp/vu" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_2" x="812" y="154">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_25" x="1106" y="154">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_12" x="1176" y="154">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_11" x="1246" y="154">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_11" x="1330" y="154">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="46"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_2" x="126" y="168">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="37"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_2" x="238" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="322" y="168">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_12" x="1246" y="196">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_3" x="238" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="sss/fx/glitchBeast" uuid="cd4840cb-7536-4a15-9683-00359115d395" name="glitchBeast_1" x="686" y="224">
+      <params>
+         <frac32.u.map name="mix" value="64.0"/>
+      </params>
+      <attribs>
+         <combo attributeName="size" selection="4096 (85.33ms)"/>
+      </attribs>
+   </obj>
+   <comment type="patch/comment" x="1372" y="266" text="PAN"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_13" x="1176" y="280">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_12" x="1246" y="280">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_12" x="1330" y="280">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="47"/>
+      </attribs>
+   </obj>
+   <comment type="patch/comment" x="126" y="294" text="GAP"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_3" x="126" y="308">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="38"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_3" x="238" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_4" x="322" y="308">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_20" x="392" y="308">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_13" x="1246" y="322">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_4" x="238" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="392" text="FILTER"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_33" x="1036" y="406">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_27" x="1106" y="406">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_14" x="1176" y="406">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_13" x="1246" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_13" x="1330" y="406">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="48"/>
+      </attribs>
+   </obj>
+   <obj type="TSG/fx/reverb" uuid="9c367a75-dea1-4203-a46d-cd6fd3686b31" name="obj_1" x="1736" y="406">
+      <params>
+         <frac32.u.map name="PreDelay" value="17.5"/>
+         <frac32.u.map name="decay" value="36.5"/>
+         <frac32.u.map name="LowDamp" value="0.0"/>
+         <frac32.u.map name="HighDamp" value="0.0"/>
+         <frac32.u.map name="size" value="64.0"/>
+         <frac32.s.map name="mod_:pitch" value="-16.0"/>
+         <frac32.u.map name="mod_:gain" value="7.5"/>
+         <frac32.u.map name="diffusion" value="63.0"/>
+         <frac32.u.map name="mix" value="24.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="126" y="434" text="REVERSE"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_4" x="126" y="448">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="39"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_4" x="238" y="448">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_5" x="322" y="448">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_14" x="1246" y="448">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_5" x="238" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="518" text="REPEATER"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_34" x="1036" y="532">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_28" x="1106" y="532">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_15" x="1176" y="532">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_14" x="1246" y="532">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_14" x="1330" y="532">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="49"/>
+      </attribs>
+   </obj>
+   <comment type="patch/comment" x="126" y="574" text="TAPESTOP"/>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_15" x="1246" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_5" x="126" y="588">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="40"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_5" x="238" y="588">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_6" x="322" y="588">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_6" x="238" y="630">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1344" y="644" text="PITCH SHIFTER"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_29" x="1106" y="658">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_16" x="1176" y="658">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_15" x="1246" y="658">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_15" x="1330" y="658">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="50"/>
+      </attribs>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_16" x="1246" y="700">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="126" y="714" text="LFO MOD"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_6" x="126" y="728">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="41"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_6" x="238" y="728">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_7" x="322" y="728">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_21" x="392" y="728">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_7" x="238" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="770" text="SCRATCH"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_17" x="1176" y="784">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_16" x="1246" y="784">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_16" x="1330" y="784">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="51"/>
+      </attribs>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_17" x="1246" y="826">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="126" y="854" text="SAMPLERATE"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_7" x="126" y="868">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="42"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_7" x="238" y="868">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_8" x="322" y="868">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1358" y="896" text="RANDOM JAM"/>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_8" x="238" y="910">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_18" x="1176" y="910">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_17" x="1246" y="910">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_17" x="1330" y="910">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="52"/>
+      </attribs>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_18" x="1246" y="952">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="126" y="1008" text="SPATIAL"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_8" x="126" y="1022">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="43"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_8" x="238" y="1022">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_9" x="322" y="1022">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="1022" text="OCTAVER"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_19" x="1176" y="1036">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_18" x="1246" y="1036">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_18" x="1330" y="1036">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="53"/>
+      </attribs>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_9" x="238" y="1064">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/i" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_1" x="868" y="1064">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_19" x="1246" y="1078">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="c16a625a661f40e4b359db604dcd00b3befcdbe3" name="*_1" x="686" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="c16a625a661f40e4b359db604dcd00b3befcdbe3" name="*_2" x="742" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="798" y="1120">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="1372" y="1148" text="SUB"/>
+   <comment type="patch/comment" x="126" y="1162" text="PHASER"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_26" x="1176" y="1162">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_19" x="1246" y="1162">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_19" x="1330" y="1162">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="54"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keyb_9" x="126" y="1176">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="44"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_9" x="238" y="1176">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_10" x="322" y="1176">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_22" x="392" y="1176">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_23" x="462" y="1176">
+      <params>
+         <frac32.u.map name="value" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="686" y="1190">
+      <params>
+         <frac32.u.map name="value" value="3.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_20" x="1246" y="1204">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/toggle" uuid="f42f0d3aab552c17bc78b9e65f85dc24f977503d" name="toggle_10" x="238" y="1218">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="dial_1" outlet="out"/>
+         <dest obj="*_2" inlet="b"/>
+         <dest obj="*_1" inlet="b"/>
+      </net>
+      <net>
+         <source obj="glitchBeast_1" outlet="outL"/>
+         <dest obj="*_1" inlet="a"/>
+         <dest obj="vu_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="glitchBeast_1" outlet="outR"/>
+         <dest obj="*_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="*_1" outlet="result"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="*_2" outlet="result"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="supersaw_1" outlet="wave"/>
+         <dest obj="glitchBeast_1" inlet="inL"/>
+         <dest obj="glitchBeast_1" inlet="inR"/>
+         <dest obj="vu_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="keyb_1" outlet="gate"/>
+         <dest obj="change_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_1" outlet="trig"/>
+         <dest obj="toggle_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_2" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Glag"/>
+      </net>
+      <net>
+         <source obj="dial_2" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="CVlag"/>
+      </net>
+      <net>
+         <source obj="keyb_2" outlet="gate"/>
+         <dest obj="change_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_2" outlet="trig"/>
+         <dest obj="toggle_3" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_3" outlet="gate"/>
+         <dest obj="change_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_3" outlet="trig"/>
+         <dest obj="toggle_4" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_4" outlet="gate"/>
+         <dest obj="change_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_4" outlet="trig"/>
+         <dest obj="toggle_5" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_5" outlet="gate"/>
+         <dest obj="change_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_5" outlet="trig"/>
+         <dest obj="toggle_6" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_6" outlet="gate"/>
+         <dest obj="change_6" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_6" outlet="trig"/>
+         <dest obj="toggle_7" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_7" outlet="gate"/>
+         <dest obj="change_7" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_7" outlet="trig"/>
+         <dest obj="toggle_8" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_8" outlet="gate"/>
+         <dest obj="change_8" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_8" outlet="trig"/>
+         <dest obj="toggle_9" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_9" outlet="gate"/>
+         <dest obj="change_9" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_9" outlet="trig"/>
+         <dest obj="toggle_10" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_10" outlet="gate"/>
+         <dest obj="change_10" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_10" outlet="trig"/>
+         <dest obj="toggle_11" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_3" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gretrig"/>
+      </net>
+      <net>
+         <source obj="dial_3" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="CVretrig"/>
+      </net>
+      <net>
+         <source obj="toggle_4" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Ggap"/>
+      </net>
+      <net>
+         <source obj="dial_4" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="gap"/>
+      </net>
+      <net>
+         <source obj="dial_20" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="offset"/>
+      </net>
+      <net>
+         <source obj="toggle_5" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Greverse"/>
+      </net>
+      <net>
+         <source obj="dial_5" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="reverserate"/>
+      </net>
+      <net>
+         <source obj="toggle_6" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gtapestop"/>
+      </net>
+      <net>
+         <source obj="dial_6" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="stoprate"/>
+      </net>
+      <net>
+         <source obj="toggle_7" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gmod"/>
+      </net>
+      <net>
+         <source obj="dial_7" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="modrate"/>
+      </net>
+      <net>
+         <source obj="dial_21" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="modwidth"/>
+      </net>
+      <net>
+         <source obj="toggle_8" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gsr"/>
+      </net>
+      <net>
+         <source obj="dial_8" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="samplerate"/>
+      </net>
+      <net>
+         <source obj="toggle_9" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gspatial"/>
+      </net>
+      <net>
+         <source obj="dial_9" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="spatial"/>
+      </net>
+      <net>
+         <source obj="toggle_10" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gphaser"/>
+      </net>
+      <net>
+         <source obj="dial_10" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="preRate"/>
+      </net>
+      <net>
+         <source obj="dial_22" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="feedRate"/>
+      </net>
+      <net>
+         <source obj="dial_23" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="feedback"/>
+      </net>
+      <net>
+         <source obj="toggle_11" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Grepeater"/>
+      </net>
+      <net>
+         <source obj="dial_11" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="repeatSize"/>
+      </net>
+      <net>
+         <source obj="dial_24" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="repeats"/>
+      </net>
+      <net>
+         <source obj="keyb_11" outlet="gate"/>
+         <dest obj="change_11" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_11" outlet="trig"/>
+         <dest obj="toggle_12" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_12" outlet="gate"/>
+         <dest obj="change_12" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_12" outlet="trig"/>
+         <dest obj="toggle_13" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_13" outlet="gate"/>
+         <dest obj="change_13" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_13" outlet="trig"/>
+         <dest obj="toggle_14" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_14" outlet="gate"/>
+         <dest obj="change_14" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_14" outlet="trig"/>
+         <dest obj="toggle_15" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_15" outlet="gate"/>
+         <dest obj="change_15" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_15" outlet="trig"/>
+         <dest obj="toggle_16" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_16" outlet="gate"/>
+         <dest obj="change_16" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_16" outlet="trig"/>
+         <dest obj="toggle_17" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_17" outlet="gate"/>
+         <dest obj="change_17" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_17" outlet="trig"/>
+         <dest obj="toggle_18" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keyb_18" outlet="gate"/>
+         <dest obj="change_18" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_18" outlet="trig"/>
+         <dest obj="toggle_19" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_12" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gring"/>
+      </net>
+      <net>
+         <source obj="dial_12" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="ringRate"/>
+      </net>
+      <net>
+         <source obj="dial_25" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="ringGain"/>
+      </net>
+      <net>
+         <source obj="toggle_13" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gpan"/>
+      </net>
+      <net>
+         <source obj="dial_13" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="panRate"/>
+      </net>
+      <net>
+         <source obj="toggle_14" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gfilter"/>
+      </net>
+      <net>
+         <source obj="dial_14" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="filterMode"/>
+      </net>
+      <net>
+         <source obj="dial_27" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="filterFreq"/>
+      </net>
+      <net>
+         <source obj="dial_33" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="filterRes"/>
+      </net>
+      <net>
+         <source obj="toggle_15" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Ggrain"/>
+      </net>
+      <net>
+         <source obj="dial_15" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="grainSize"/>
+      </net>
+      <net>
+         <source obj="dial_28" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="grainPosition"/>
+      </net>
+      <net>
+         <source obj="dial_34" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="grainRate"/>
+      </net>
+      <net>
+         <source obj="toggle_16" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gpitchshifter"/>
+      </net>
+      <net>
+         <source obj="dial_16" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="pitchShift"/>
+      </net>
+      <net>
+         <source obj="dial_29" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="window"/>
+      </net>
+      <net>
+         <source obj="toggle_17" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gscratch"/>
+      </net>
+      <net>
+         <source obj="dial_17" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="scratch"/>
+      </net>
+      <net>
+         <source obj="toggle_18" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="GrndJam"/>
+      </net>
+      <net>
+         <source obj="dial_18" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="rndRate"/>
+      </net>
+      <net>
+         <source obj="toggle_19" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Goctaver"/>
+      </net>
+      <net>
+         <source obj="dial_19" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="octaver"/>
+      </net>
+      <net>
+         <source obj="keyb_19" outlet="gate"/>
+         <dest obj="change_19" inlet="in"/>
+      </net>
+      <net>
+         <source obj="change_19" outlet="trig"/>
+         <dest obj="toggle_20" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_20" outlet="o"/>
+         <dest obj="glitchBeast_1" inlet="Gsub"/>
+      </net>
+      <net>
+         <source obj="dial_26" outlet="out"/>
+         <dest obj="glitchBeast_1" inlet="subRate"/>
+      </net>
+      <net>
+         <source obj="glitchBeast_1" outlet="samplelength"/>
+         <dest obj="i_1" inlet="in"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>32</x>
+      <y>38</y>
+      <width>1480</width>
+      <height>944</height>
+   </windowPos>
+</patch-1.0>

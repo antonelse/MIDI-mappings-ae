@@ -11,9 +11,14 @@ A series of MIDI mappings I created for my studio # MIDI Mapping Repository 🎛
 
 ## Overview
 
-This repository contains comprehensive MIDI mapping configurations for the Evolution UC33e controller, providing hands-on control for electronic music production hardware. Each mapping is carefully designed to maximize workflow efficiency and creative potential.
+This repository contains comprehensive MIDI mapping configurations for several MIDI controller devices, providing hands-on control for electronic music production hardware. Each mapping is carefully designed to maximize workflow efficiency and creative potential. We currently have mappings for the following MIDI controllers:
 
-## Available Mappings
+* Evolution UC33e
+* Korg NanoPAD
+
+## Mappings
+
+### UC33e
 
 | Device | Status | MIDI Channel | UC33e Presets | Controls | Documentation |
 |--------|--------|--------------|---------------|----------|---------------|
@@ -22,7 +27,12 @@ This repository contains comprehensive MIDI mapping configurations for the Evolu
 | **AnDrone** | ✅ Complete | 1 | P22-P25 | 33+ | [View Guide](./axoloti_drone-evolution_uc33e/GUIDE.md) |
 | **Behringer XR18** | ✅ Complete | 6 | P30 | Variable | [View Guide](./behringer_xr18-evolution_uc33e/GUIDE.md) |
 
-## File Structure
+### nanoPad
+| Device | Status | MIDI Channel | Controls | Documentation |
+|--------|--------|--------------|---------------|----------|---------------|
+| **AxoGlitch** | ✅ Complete | 1 | TBD | [View Guide](./axoloti_glitch-korg_nanopad/GUIDE.md) |
+
+## Project Structure
 ```
 MIDI-mappings-ae/
 ├── elektron_md-evolution_uc33e/
@@ -35,6 +45,10 @@ MIDI-mappings-ae/
 │   ├── GUIDE.md
 │   ├── imgs/
 │   └── extra/
+├── axoloti_glitch-korg_nanopad/
+│   ├── GUIDE.md
+│   ├── imgs/
+│   └── extra/
 ├── behringer_xr18-evolution_uc33e/
 │   ├── GUIDE.md
 │   └── imgs/
@@ -43,48 +57,49 @@ MIDI-mappings-ae/
 ├── complete_dump_UC33e.syx
 └── README.md
 ```
-## UC33e-Related
-### Mapping Process 🔄
+## Deep Dives
+### UC33e
+#### Mapping Process 🔄
 
 For each parameter, perform these 2 main operations on the UC33e: **Assignment** and **Storage**.
 
-#### 1. Assignment:
+##### 1. Assignment:
 - Move the desired knob/fader/button to focus on it
 - Press **ASSIGN**: Set the desired CC value using the keypad
 - Press **CHANNEL**: Set the desired MIDI channel
 
-#### 2. Storage:
+##### 2. Storage:
 - Press **STORE**: Set the desired preset number to save this mapping (e.g., 20 for P20)
 
 **⚠️ Important**: Wait until the screen stops blinking before proceeding!
 
-### Memory Dump/Restore 💾
+#### Memory Dump/Restore 💾
 
 Use [SysEx Librarian](https://www.snoize.com/SysExLibrarian/) software with a MIDI2USB cable for I/O communication. You can also send MIDI via USB by using the **MIDI OUT FROM USB** function (press SELECT + ASSIGN together).
 
-#### Dump Process:
+##### Dump Process:
 - Connect MIDI2USB to UC33e OUTPUT MIDI port
 - In SysEx Librarian, select correct input source
 - Press *Record Many* in SysEx Librarian
 - On UC33e, press MEM.DUMP (DATA MSB + STORE)
 - UC33e screen shows *SYS* - transmission in progress
 
-#### Restore Process:
+##### Restore Process:
 - Connect MIDI2USB to UC33e INPUT MIDI port
 - In SysEx Librarian, select correct output source
 - Select SysEx file and press *Play*
 - UC33e screen shows *SYS* - receiving in progress
 
-#### Load a Preset:
+##### Load a Preset:
 - Press RECALL and enter the preset number (e.g., 20 for P20)
 
-### Useful Shortcuts 🎯
+#### Useful Shortcuts 🎯
 - **Reset UC33e**: Turn on while holding + and - buttons
 - **Lock UC33e**: Press CTR MUTE (PROGRAM + DATA LSB)
 - **Send Snapshots**: Press SNAPSHOT ("+" + "-")
 - **MIDI Out via USB**: Press SELECT + ASSIGN together
 
-### Useful Tips & Tricks 💡
+#### Useful Tips & Tricks 💡
 
 **Speed Up MIDI CHANNEL Assignment:**
 
@@ -101,6 +116,8 @@ Use [SysEx Librarian](https://www.snoize.com/SysExLibrarian/) software with a MI
 
 - Quickly move knobs while watching the screen to verify CC and MIDI CHANNEL values
 
+### NanoPad
+#### WIP
 ___
 
 **MIDI-mappings-ae** - midi mappings. Copyright (C) 2025  Antonio Giganti - ae

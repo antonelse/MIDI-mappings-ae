@@ -1,0 +1,23 @@
+/config/name "ED-L"
+/config/color 1
+/preamp +0.0 ON OFF OFF  20
+/gate OFF GATE -80.0 60.0 1  502 983 SELF
+/gate/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +0.00 2.0
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0 151 100 SELF OFF
+/dyn/filter OFF 3.0 990.9
+/mix ON   -oo ON -100
+/mix/01   0.0 OFF POST -100
+/mix/02   0.0 OFF POST
+/mix/03   -oo OFF POSTEQ -100
+/mix/04   -oo OFF POSTEQ
+/mix/05   -oo OFF POSTEQ -100
+/mix/06   -oo OFF POSTEQ
+/mix/07   -oo OFF POST
+/mix/08   -oo OFF POST
+/mix/09   -oo OFF POST
+/mix/10   -oo OFF POST
