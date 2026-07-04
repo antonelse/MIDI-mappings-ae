@@ -84,9 +84,9 @@ In specific:
 	- `src3 ` is a random drift signal
 
 - Output 
-	- `out1` signal is summed with the timbre mod of OSC 4
-	- `out2` signal is summed with the timbre mod of OSC 5
-	- `out3` signal modulate alone the pitch of OSC 6
+	- `out1` signal is summed with the `color` mod of OSC 4
+	- `out2` signal is summed with the `color` mod of OSC 5
+	- `out3` signal modulate alone the `pitch` of OSC 6
 
 ### UC33e Mapping Configuration 🎹
 
@@ -122,6 +122,8 @@ I decided to divide the mapping into 3 pages (presets P22, P24 and P25 on the UC
 - [10] [M-Audio Evolution UC33e Manual](https://www.strumentimusicali.net/manuali/M_AUDIO_UC-33e_EN.pdf)
 
 ## TODO List 📝
+
+-  Update patch images
 - Understand MSB and LSB parameters for higher resolution control
 - Think about the addition of the play/pause/fwd buttons in the bottom right (burst like modulation ?)
 - Add noisefloor
